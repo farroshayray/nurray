@@ -1,0 +1,237 @@
+misal kyak gini klu pakai metode add & remove class
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      h1 {
+        color: #f6dcac;
+      }
+      h2 {
+        color: #f6dcac;
+      }
+      h3 {
+        color: #f6dcac;
+      }
+      h4 {
+        color: #f6dcac;
+        font-size: 12px;
+      }
+      .rounded-image {
+        border-radius: 8px;
+      }
+      p {
+        color: #f6dcac;
+        font-size: 9px;
+        line-height: 0.5; /* Adjusts the spacing between lines in paragraphs */
+      }
+      .show-more-button {
+        background-color: #f6dcac;
+        color: #01204e;
+        border: none;
+        border-radius: 5px;
+        padding: 5px 10px;
+        cursor: pointer;
+        font-size: 12px;
+        margin-top: 10px;
+        z-index: 3;
+      }
+      .show-more-button:hover {
+        background-color: #e5c89c;
+      }
+      body {
+        background-color: #01204e; /* Light grey background for better readability */
+        position: relative;
+        z-index: 1;
+      }
+      .article-frame {
+        background-color: #028391; /* Light grey background for better readability */
+        border-radius: 15px;
+        padding: 20px;
+        margin-bottom: 10px;
+        position: relative; /* Position relative to contain absolute positioned children */
+        opacity: 1; /* 50% transparency */
+        z-index: 2;
+        width: 15%; /* Fixed width */
+        height: 150%; /* Fixed height */
+      }
+      .article-frame::before {
+        content: "";
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #028391; /* Corrected missing value */
+        opacity: 0; /* 50% transparency */
+        z-index: -1; /* Place the pseudo-element behind the content */
+      }
+      .article-content {
+        position: relative; /* Ensures content is above the pseudo-element */
+        opacity: 1; /* Full opacity for the content */
+        z-index: 1; /* Ensures it is above the pseudo-element */
+      }
+      .article-content p {
+        color: #ffffff; /* Brighter text color */
+        position: relative;
+        opacity: 1;
+        z-index: 1;
+      }
+      .article-content-photo {
+        display: flex; /* Enables flexbox */
+        flex-direction: column; /* Stacks children vertically */
+        align-items: center; /* Centers children horizontally */
+        justify-content: center; /* Centers children vertically */
+        height: 100%; /* Take full height of the parent */
+        border-radius: 10%;
+      }
+      .hidden {
+        display: none;
+      }
+      .hidden-text {
+        overflow: hidden;
+        padding: 10px;
+        margin-bottom: 10px;
+        position: relative;
+      }
+      .hidden-text p {
+        margin: 0; /* Ensure no negative margins */
+        line-height: 1.5; /* Adequate line height */
+        font-size: 9px; /* Adjust font size if necessary */
+        overflow: visible; /* Temporarily set to visible to check overflow issues */
+        position: relative;
+      }
+      .behind {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        z-index: 1;
+      }
+      .front {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        left: 50px;
+        top: 50px;
+        background-color: blue;
+        z-index: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Selamat datang di SGS Motor Group</h1>
+      <p>Website jual beli mobil terpercaya di Depok</p>
+    </header>
+    <section>
+      <h2>Daftar Mobil dijual</h2>
+      <p>
+        Kami menjual segala merk dan tipe mobil dengan kualitas yang sangat baik
+      </p>
+      <article class="article-frame">
+        <div class="article-content">
+          <img
+            class="article-content-photo"
+            src="https://img.cintamobil.com/resize/600x-/2023/06/05/20230605231039-daaf.png"
+            alt="Toyota Agya 2014"
+            class="rounded-image"
+            style="width: 100px; height: 75px"
+          />
+          <h4>Toyota Agya AT 2014</h4>
+          <p>Harga: Rp. 91.000.000</p>
+          <p>Tipe: G Matic</p>
+          <div class="hidden-text hidden">
+            <p>Warna: Putih</p>
+            <p>Fitur: Power Steering, ABS, ESP, Airbags, Air Conditioning</p>
+            <p>Tahun: 2014</p>
+            <p>Transmisi: Automatic</p>
+            <p>Km: 90.000</p>
+          </div>
+          <button class="show-more-button" onclick="toggleHiddenText(event)">
+            Show More...
+          </button>
+        </div>
+      </article>
+
+      <article class="article-frame">
+        <div class="article-content">
+          <img
+            src="https://img.cintamobil.com/2018/07/17/KM1pHMws/20180627130446hdr-906c.jpg"
+            alt="Wuling Confero S 2018"
+            class="rounded-image"
+            style="width: 100px; height: 75px"
+          />
+          <h4>Wuling Confero S MT 2018</h4>
+          <p>Harga: Rp. 99.000.000</p>
+          <p>Tipe: S Lux</p>
+          <div class="hidden-text hidden">
+            <p>Warna: Hitam</p>
+            <p>Fitur: Power Steering, ABS, ESP, Airbags, Air Conditioning</p>
+            <p>Tahun: 2018</p>
+            <p>Transmisi: Manual</p>
+            <p>Km: 33.000</p>
+          </div>
+          <button class="show-more-button" onclick="toggleHiddenText(event)">
+            Show More...
+          </button>
+        </div>
+      </article>
+
+      <article class="article-frame">
+        <div class="article-content">
+          <img
+            src="https://media.karousell.com/media/photos/products/2022/11/3/mitsubishi_expander_sport_2018_1667456550_bf6e0a64_progressive.jpg"
+            alt="Mitsubishi Expander Sport 2018"
+            class="rounded-image"
+            style="width: 100px; height: 75px"
+          />
+          <h4>Mitsubishi Expander Sport AT 2018</h4>
+          <p>Harga: Rp. 185.000.000</p>
+          <p>Tipe: Sport</p>
+          <div class="hidden-text hidden">
+            <p>Warna: Bronze</p>
+            <p>Fitur: Power Steering, ABS, ESP, Airbags, Air Conditioning</p>
+            <p>Tahun: 2018</p>
+            <p>Transmisi: Automatic</p>
+            <p>Km: 106.000</p>
+          </div>
+          <button class="show-more-button" onclick="toggleHiddenText(event)">
+            Show More...
+          </button>
+        </div>
+      </article>
+    </section>
+    <footer>
+      <h4>About Us</h4>
+      <p>
+        perusahaan kami adalah perusahaan yang bergerak di bidang jual beli
+        mobil dengan kualitas terbaik dikelasnya dan dengan harga yang bersaing
+        sejak tahun 2002.
+      </p>
+      <p>Copyright 2002 SGS Motor Group</p>
+    </footer>
+    <script>
+      var exampleVariable = "Hello, world!"; // This will output 'Hello, world!' in the console
+      function toggleHiddenText(event) {
+        const button = event.target;
+        const articleContent = button.closest(".article-content");
+        const hiddenText = articleContent.querySelector(".hidden-text");
+        
+        if (hiddenText.classList.contains("hidden")) {
+            hiddenText.classList.remove("hidden");
+            button.textContent = "Show Less..."; 
+        } else {
+            hiddenText.classList.add("hidden");
+            button.textContent = "Show More..."; 
+        }
+      }
+    </script>
+  </body>
+</html>
