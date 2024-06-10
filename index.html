@@ -45,6 +45,8 @@
     }
     body {
         background-color: #01204E; /* Light grey background for better readability */
+        position: relative;
+        z-index: 1;
     }
     .article-frame {
         background-color: #028391; /* Light grey background for better readability */
@@ -53,27 +55,29 @@
         margin-bottom: 20px;
         position: relative; /* Position relative to contain absolute positioned children */
         opacity: 1; /* 50% transparency */
-        z-index: -1;
+        z-index: 2;
     }
     .article-frame::before {
         content: "";
-        position: absolute;
+        position: relative;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
         background-color: #028391; /* Corrected missing value */
-        opacity: 0.5; /* 50% transparency */
+        opacity: 0; /* 50% transparency */
         z-index: -1; /* Place the pseudo-element behind the content */
     }
     .article-content {
         position: relative; /* Ensures content is above the pseudo-element */
         opacity: 1; /* Full opacity for the content */
-        z-index: 2; /* Ensures it is above the pseudo-element */
+        z-index: -1; /* Ensures it is above the pseudo-element */
     }
     .article-content p {
         color: #FFFFFF; /* Brighter text color */
-        z-index: 1;
+        position: relative;
+        opacity: 1;
+        z-index: -1;
     }
     .hidden-text {
         display: none;
