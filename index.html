@@ -27,7 +27,7 @@
         p {
             color: #F6DCAC;
             font-size: 9px;
-            line-height: 0.2; /* Adjusts the spacing between lines in paragraphs */
+            line-height: 0.5; /* Adjusts the spacing between lines in paragraphs */
             
         } 
     .show-more-button {
@@ -39,6 +39,7 @@
         cursor: pointer;
         font-size: 12px;
         margin-top: 10px;
+        z-index: 3;
     }
     .show-more-button:hover {
         background-color: #E5C89C;
@@ -51,11 +52,13 @@
     .article-frame {
         background-color: #028391; /* Light grey background for better readability */
         border-radius: 15px;
-        padding: 10px;
-        margin-bottom: 20px;
+        padding: 20px;
+        margin-bottom: 10px;
         position: relative; /* Position relative to contain absolute positioned children */
         opacity: 1; /* 50% transparency */
         z-index: 2;
+        width: 15%; /* Fixed width */
+        height: 150%; /* Fixed height */
     }
     .article-frame::before {
         content: "";
@@ -71,16 +74,52 @@
     .article-content {
         position: relative; /* Ensures content is above the pseudo-element */
         opacity: 1; /* Full opacity for the content */
-        z-index: -1; /* Ensures it is above the pseudo-element */
+        z-index: 1; /* Ensures it is above the pseudo-element */
     }
     .article-content p {
         color: #FFFFFF; /* Brighter text color */
         position: relative;
         opacity: 1;
-        z-index: -1;
+        z-index: 1;
+    }
+    .article-content-photo {
+        display: flex; /* Enables flexbox */
+        flex-direction: column; /* Stacks children vertically */
+        align-items: center; /* Centers children horizontally */
+        justify-content: center; /* Centers children vertically */
+        height: 100%; /* Take full height of the parent */
+        border-radius: 10%;
+
     }
     .hidden-text {
         display: none;
+        overflow: hidden;
+        padding: 10px;
+        margin-bottom: 10px;
+        position: relative;
+    }
+    .hidden-text p {
+        margin: 0;  /* Ensure no negative margins */
+        line-height: 1.5; /* Adequate line height */
+        font-size: 9px; /* Adjust font size if necessary */
+        overflow: visible; /* Temporarily set to visible to check overflow issues */
+        position: relative;
+    }
+    .behind { 
+        position: absolute; 
+        width: 200px; 
+        height: 200px; 
+        background-color: red; 
+        z-index: 1; 
+    }
+    .front { 
+        position: absolute; 
+        width: 200px; 
+        height: 200px; 
+        left: 50px; 
+        top: 50px; 
+        background-color: blue; 
+        z-index: 2; 
     }
     </style>
 </head>
@@ -94,11 +133,10 @@
         <p>Kami menjual segala merk dan tipe mobil dengan kualitas yang sangat baik</p>
         <article class="article-frame">
             <div class="article-content">
-                <img src="https://img.cintamobil.com/resize/600x-/2023/06/05/20230605231039-daaf.png" alt="Toyota Agya 2014" class="rounded-image" style="width:100px; height:75px;">
+                <img class="article-content-photo" src="https://img.cintamobil.com/resize/600x-/2023/06/05/20230605231039-daaf.png" alt="Toyota Agya 2014" class="rounded-image" style="width:100px; height:75px;">
                 <h4>Toyota Agya AT 2014</h4>
                     <p>Harga: Rp. 91.000.000</p>
                     <p>Tipe: G Matic</p>
-                    <p>.....</p>
                 <div class="hidden-text">
                     <p>Warna: Putih</p>
                     <p>Fitur: Power Steering, ABS, ESP, Airbags, Air Conditioning</p>
@@ -116,7 +154,6 @@
                 <h4>Wuling Confero S MT 2018</h4>
                     <p>Harga: Rp. 99.000.000</p>
                     <p>Tipe: S Lux</p>
-                    <p>.....</p>
                     <div class="hidden-text">
                 <p>Warna: Hitam</p>
                     <p>Fitur: Power Steering, ABS, ESP, Airbags, Air Conditioning</p>
@@ -134,7 +171,6 @@
                 <h4>Mitsubishi Expander Sport AT 2018</h4>
                 <p>Harga: Rp. 185.000.000</p>
                 <p>Tipe: Sport</p>
-                <p>.....</p>
                 <div class="hidden-text">
                     <p>Warna: Bronze</p>
                     <p>Fitur: Power Steering, ABS, ESP, Airbags, Air Conditioning</p>
@@ -174,3 +210,4 @@
     </script>
 </body>
 </html>
+
