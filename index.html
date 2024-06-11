@@ -26,8 +26,14 @@
             width: 100%; /* Menggunakan lebar 100% dari container */
             box-sizing: border-box; /* Menghitung padding dan border dalam width */
         }
-        h4 {
+        .aboutus {
             color: #F6DCAC;
+            font-size: 12px;
+            width: 100%; /* Menggunakan lebar 100% dari container */
+            box-sizing: border-box; /* Menghitung padding dan border dalam width */
+        }
+        h4 {
+            color: #f6dcacbd;
             font-size: 12px;
             width: 100%; /* Menggunakan lebar 100% dari container */
             box-sizing: border-box; /* Menghitung padding dan border dalam width */
@@ -42,109 +48,146 @@
             width: 100%; /* Menggunakan lebar 100% dari container */
             box-sizing: border-box; /* Menghitung padding dan border dalam width */
         } 
-    .show-more-button {
-        background-color: #F6DCAC;
-        color: #01204E;
-        border: none;
-        border-radius: 5px;
-        padding: 5px 10px;
-        cursor: pointer;
-        font-size: 11px;
-        margin-top: 10px;
-        z-index: 3;
-    }
-    .show-more-button:hover {
-        background-color: #E5C89C;
-    }
-    body {
-        background-color: #01204E; /* Light grey background for better readability */
-        position: relative;
-        z-index: 1;
-    }
-    .article-frame {
-        background-color: #028391; /* Light grey background for better readability */
-        border-radius: 15px;
-        padding: 20px;
-        margin-bottom: 10px;
-        position: relative; /* Position relative to contain absolute positioned children */
-        opacity: 1; /* 50% transparency */
-        z-index: 2;
-        width: 100%; /* Menggunakan lebar 100% dari viewport */
-        height: 150%; /* Fixed height */
-        box-sizing: border-box; /* Menghitung padding dalam width */
-    }
-    .article-frame::before {
-        content: "";
-        position: relative;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #028391; /* Corrected missing value */
-        opacity: 0; /* 50% transparency */
-        z-index: -1; /* Place the pseudo-element behind the content */
-    }
-    .article-content {
-        position: relative; /* Ensures content is above the pseudo-element */
-        opacity: 1; /* Full opacity for the content */
-        z-index: 1; /* Ensures it is above the pseudo-element */
-    }
-    .article-content p {
-        color: #FFFFFF; /* Brighter text color */
-        position: relative;
-        opacity: 1;
-        z-index: 1;
-    }
-    .article-content-photo {
-        display: flexbox; /* Enables flexbox */
-        flex-direction: column; /* Stacks children vertically */
-        align-items: center; /* Centers children horizontally */
-        justify-content: center; /* Centers children vertically */
-        height: 100%; /* Take full height of the parent */
-        border-radius: 10%;
-        width: 100%; /* Foto akan menyesuaikan lebar container */
-        height: auto; /* Tinggi akan menyesuaikan secara otomatis */
-        max-width: 100px; /* Maksimal lebar foto */
-        max-height: 75px; /* Maksimal tinggi foto */
-    }
-    .hidden-text {
-        display: none;
-        overflow: hidden;
-        padding: 10px;
-        margin-bottom: 10px;
-        position: relative;
-    }
-    .hidden-text p {
-        margin: 0;  /* Ensure no negative margins */
-        line-height: 1.5; /* Adequate line height */
-        font-size: 9px; /* Adjust font size if necessary */
-        overflow: visible; /* Temporarily set to visible to check overflow issues */
-        position: relative;
-    }
-    .behind { 
-        position: absolute; 
-        width: 200px; 
-        height: 200px; 
-        background-color: red; 
-        z-index: 1; 
-    }
-    .front { 
-        position: absolute; 
-        width: 200px; 
-        height: 200px; 
-        left: 50px; 
-        top: 50px; 
-        background-color: blue; 
-        z-index: 2; 
-    }
-    header, section, footer {
-        padding: 10px;
-        width: 100%; /* Menggunakan lebar 100% dari viewport */
-    }
+        .show-more-button {
+            background-color: #f6dcac7c;
+            color: #01204E;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-size: 11px;
+            margin-top: 10px;
+            z-index: 3;
+        }
+        .show-more-button:hover {
+            background-color: #E5C89C;
+        }
+        body {
+            background-color: #222831; /* Light grey background for better readability */
+            position: relative;
+            z-index: 1;
+        }
+        .article-frame {
+            background-color: #35383e; /* Light grey background for better readability */
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 10px;
+            position: relative; /* Position relative to contain absolute positioned children */
+            z-index: 1;
+            width: 100%; /* Menggunakan lebar 100% dari viewport */
+            height: 150%; /* Fixed height */
+            box-sizing: border-box; /* Menghitung padding dalam width */
+        }
+        .article-frame::before {
+            content: "";
+            position: relative;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #028391; /* Corrected missing value */
+            opacity: 1; /* 50% transparency */
+            z-index: 0; /* Place the pseudo-element behind the content */
+        }
+        .article-content {
+            position: relative; /* Ensures content is above the pseudo-element */
+            opacity: 1; /* Full opacity for the content */
+            z-index: 1; /* Ensures it is above the pseudo-element */
+        }
+        .article-content p {
+            color: #EEE9DA; /* Brighter text color */
+            position: relative;
+            opacity: 1;
+            z-index: 1;
+        }
+        .article-content-photo {
+            display: flexbox; /* Enables flexbox */
+            flex-direction: column; /* Stacks children vertically */
+            align-items: center; /* Centers children horizontally */
+            justify-content: center; /* Centers children vertically */
+            height: 100%; /* Take full height of the parent */
+            border-radius: 10%;
+            width: 100%; /* Foto akan menyesuaikan lebar container */
+            height: auto; /* Tinggi akan menyesuaikan secara otomatis */
+            max-width: 100px; /* Maksimal lebar foto */
+            max-height: 75px; /* Maksimal tinggi foto */
+        }
+        .hidden-text {
+            display: none;
+            overflow: hidden;
+            padding: 10px;
+            margin-bottom: 10px;
+            position: relative;
+        }
+        .hidden-text p {
+            margin: 0;  /* Ensure no negative margins */
+            line-height: 1.5; /* Adequate line height */
+            font-size: 9px; /* Adjust font size if necessary */
+            overflow: visible; /* Temporarily set to visible to check overflow issues */
+            position: relative;
+        }
+        .behind { 
+            position: absolute; 
+            width: 200px; 
+            height: 200px; 
+            background-color: red; 
+            z-index: 1; 
+        }
+        .front { 
+            position: absolute; 
+            width: 200px; 
+            height: 200px; 
+            left: 50px; 
+            top: 50px; 
+            background-color: blue; 
+            z-index: 2; 
+        }
+        header, section, footer {
+            padding: 10px;
+            width: 100%; /* Menggunakan lebar 100% dari viewport */
+        }
+        .popup-form {
+                position:fixed;
+                top: -10%;
+                left: 10%;
+                width: 90%;
+                height: 100%;
+                background-color: rgba(255, 255, 255, 0);
+                display: flex;
+                justify-content:center;
+                align-items: center;
+                z-index: 5;
+                border-radius: 50px;
+        }
+
+        .popup-content {
+                background-color: #f6dcac7c;
+                padding: 50px; /* Reduced padding for smaller size */
+                border-radius: 25px; /* Smaller border radius */
+                width: 150px; /* Reduced width */
+                box-shadow: 0 3px 10px rgba(231, 3, 3, 0); /* Smaller shadow */
+                position: relative;
+                top: 25px; /* Adjusted top position for smaller size */
+                justify-content: center;
+                align-items: center;
+        }
+        .article-content-h2 {
+            color: #f6dcac;
+            width: 100%; /* Menggunakan lebar 100% dari container */
+            box-sizing: border-box; /* Menghitung padding dan border dalam width */
+            font-size: 20px;
+        }
+        .close-button {
+            float: right;
+            font-size: 20px;
+            cursor:pointer;
+        }
     </style>
 </head>
 <body>
     <header>
+        <img src="SGSlogowht.png" alt="Logo SGS Motor Group" style="height: 50px;"> <!-- Path and style adjusted as needed -->
+        </form>
         <h1 style="margin-bottom: 1px;">Selamat datang di SGS Motor Group</h1>
         <p style="margin-top: 1px;">Website jual beli mobil terpercaya di Depok</p>
         <form action="/search" method="get">
@@ -244,8 +287,32 @@
             </div>
         </article>
     </section>
+
+    <section>
+    <button id="contactUsButton" onclick="openContactForm()">Contact Us</button>
+
+    <div id="contactFormPopup" class="popup-form" style="display:none;">
+        <div class="popup-content">
+            <span class="close-button" onclick="closeContactForm()">&times;</span>
+            <span class="article-content-h2">Contact Us</span><br><br>
+            <form style="position: relative; z-index: 5;">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="21" required></textarea><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+        <!-- WhatsApp Contact Button -->
+        <a href="https://wa.me/6285158444204?text=Hallo%2C%20saya%20ingin%20bertanya%20tentang%20produk%20yang%20dijual%20oleh%20SGS%20motor%21" target="_blank" style="position: fixed; bottom: 2px; right: 2px; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; z-index: 1000;">
+            <img src="https://img.icons8.com/?size=100&id=BkugfgmBwtEI&format=png&color=000000" style="vertical-align: middle; margin-right: -10px; width: 50px;">
+        </a>
+    </section>
     <footer>
-        <h4>About Us</h4>
+        <div class="aboutus">About Us</div>
         <p style="line-height: 1.5;">Perusahaan kami bergerak di bidang jual beli mobil dengan kualitas terbaik di kelasnya dan harga yang bersaing sejak tahun 2002.</p>
         <p>&copy; 2002 SGS Motor Group</p>
     </footer>
@@ -267,6 +334,14 @@
                 button.textContent = 'Show More...'; // Change button text back to 'Show More...'
             }
         }
+        function openContactForm() {
+            document.getElementById('contactFormPopup').style.display = 'flex';
+        }
+
+        function closeContactForm() {
+            document.getElementById('contactFormPopup').style.display = 'none';
+        }
     </script>
 </body>
 </html>
+
