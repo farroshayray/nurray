@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div id="markdown-preview"></div>
+    <script>
+      fetch('./Readme.md')
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.text();
+        })
+        .then(text => {
+          document.getElementById('markdown-preview').innerHTML = marked(text);
+        })
+        .catch(err => {
+          console.error('Fetch Error:', err);
+          document.getElementById('markdown-preview').innerHTML = '<p>Error loading the Markdown file.</p>';
+        });
+    </script>
+</body>
+</html>
