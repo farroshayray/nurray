@@ -3,25 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Markdown Previewer</title>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
+    <textarea id="markdown-input" placeholder="
+    
+    # Farros - Software Engineer
+
+## Introduction
+Welcome to my GitHub profile! I'm Farros, a passionate software engineer. This README provides an overview of my projects, skills, and interests in the field of software engineering.
+
+## About Me
+- **Name:** Farros H R
+- **Location:** [Yogyakarta, Indonesia](https://maps.app.goo.gl/ZwMCvT9GLL3xjPG17)
+- **LinkedIn:** [Linkedin, Farros](https://www.linkedin.com/in/farros/)
+- **Email:** [farros.hr@gmail.com](mailto:farros.hr@gmail.com)
+
+
+   [![Discord](https://img.icons8.com/color/48/000000/discord-logo.png)](https://discord.gg/farroshayray) [![Instagram](https://img.icons8.com/color/48/000000/instagram-new.png)](https://www.instagram.com/farroshayray/) [![Facebook](https://img.icons8.com/color/48/000000/facebook-new.png)](https://www.facebook.com/farros.h.rayhan/) [![Twitter](https://img.icons8.com/color/48/000000/twitter.png)](https://twitter.com/farroshayray) [![Linkedin](https://img.icons8.com/color/48/000000/linkedin.png)](https://www.linkedin.com/in/farros/)
+## Skills
+- Programming Languages: Java, Python, JavaScript, C++
+- Web Development: HTML, CSS, React, React JS
+- Database Management: MySQL
+- Version Control: Git
+- Problem-solving and analytical skills
+- Strong communication and teamwork abilities
+
+## Projects
+### Project 1: Car buying and selling website
+- **Description:** A full-stack web application developed using `React`.
+- **Features:** product listing, shopping cart, order processing, direct whatsapp chat.
+- **Technologies:** `React`, `HTML/CSS`.
+- **Repository:** [SGSmotor](https://www.sgsmotor.com)
+
+## Projects
+### Project 2: Surveilance detection system
+- **Description:** A full-stack web application developed using `React`, `IoT`, and `Python`.
+- **Features:** direct chat telegram, email, and whatsapp. Camera an infrared detection system
+- **Technologies:** `IoT`, image processing, raspberry, and arduino
+- **Repository:** [raspisurveilance](https://www.raspimotion.com)
+
+## Interests
+I am passionate about exploring new technologies and techniques in software engineering. I enjoy working on challenging projects that allow me to apply and expand my skills. Working remotely makes it easier for me to provide innovative solutions
+
+## Contact Me
+Feel free to reach out to me via [email](mailto:farros.hr@gmail.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/farros/). I'm always open to discussing collaboration opportunities or just chatting about software engineering!
+
+    
+    
+    "></textarea>
     <div id="markdown-preview"></div>
+
     <script>
-      fetch('./Readme.md')
-        .then(response => {
-          if (!response.ok) {
-            throw new Error('Network response was not ok');
-          }
-          return response.text();
-        })
-        .then(text => {
-          document.getElementById('markdown-preview').innerHTML = marked(text);
-        })
-        .catch(err => {
-          console.error('Fetch Error:', err);
-          document.getElementById('markdown-preview').innerHTML = '<p>Error loading the Markdown file.</p>';
+        const input = document.getElementById('markdown-input');
+        const preview = document.getElementById('markdown-preview');
+
+        input.addEventListener('input', function() {
+            const markdownText = input.value;
+            preview.innerHTML = marked(markdownText);
         });
     </script>
 </body>
