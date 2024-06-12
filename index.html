@@ -196,15 +196,15 @@
 </head>
 <body>
     <nav style="display: flex; justify-content: space-between; align-items: center; padding: 10px; margin-top: 10px; margin-left: 10px; margin-right: 0px; background-color: #35383e; border-radius: 12px;">
-        <img src="SGSlogowht.png" alt="Logo SGS Motor Group" style="height: 50px;">
-        <div style="margin-right: 20px;">
-            <span>
-                <a href="Readme.html" style="color: #f6dcac; font-size: calc(8px + 0.5vw); font-weight: bold;">Support</a> &nbsp; <!-- calc(8px + 0.5vw) membuat font-size bisa berubah sesuai dengan viewport -->
-                <a href="services.html" style="color: #f6dcac; font-size: calc(8px + 0.5vw); font-weight: bold;">Services</a> &nbsp;
-                <a href="projects.html" style="color: #f6dcac; font-size: calc(8px + 0.5vw); font-weight: bold;">Projects</a> &nbsp;
-                <a href="about.html" style="color: #f6dcac; font-size: calc(8px + 0.5vw); font-weight: bold;">About</a>
+        <img src="SGSlogowht.png" alt="Logo SGS Motor Group" style="height: auto; max-height: 50px; width: auto; max-width: 100%; min-width: 20px;">
+        <div style="margin-right: 20px; max-width: 100%; min-width: 20px; display: flex; align-items: center;">
+            <span style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
+                <a href="Readme.html" style="color: #f6dcac; font-size: calc(8px + 0.5vw); font-weight: bold; text-decoration: none;">Support</a> &nbsp; <!-- calc(8px + 0.5vw) membuat font-size bisa berubah sesuai dengan viewport -->
+                <a href="services.html" style="color: #f6dcac; font-size: calc(8px + 0.5vw); font-weight: bold; text-decoration: none;">Services</a> &nbsp;
+                <a href="projects.html" style="color: #f6dcac; font-size: calc(8px + 0.5vw); font-weight: bold; text-decoration: none;">Projects</a> &nbsp;
+                <a href="about.html" style="color: #f6dcac; font-size: calc(8px + 0.5vw); font-weight: bold; text-decoration: none;">About</a>
             </span>
-            <button onclick="window.location.href='feedback.html'" style="margin-left: 20px; color: #222831; font-size: calc(8px + 0.5vw); font-weight: bold; background-color: #f6dcac; border: none; border-radius: 12px; cursor: pointer;">Contact</button>
+            <button onclick="const contactButton = document.getElementById('contactUsButton'); contactButton.scrollIntoView({ behavior: 'smooth', block: 'start' }); setTimeout(() => contactButton.click(), 500);" style="margin-left: 20px; color: #222831; font-size: calc(8px + 0.5vw); font-weight: bold; background-color: #f6dcac; border: none; border-radius: 12px; cursor: pointer;">Contact</button>
         </div>
     </nav>
     <header>
@@ -367,3 +367,4 @@
     </script>
 </body>
 </html>
+
