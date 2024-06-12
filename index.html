@@ -71,12 +71,15 @@
         .article-frame {
             background-color: #35383e; /* Light grey background for better readability */
             border-radius: 15px;
-            padding: 20px;
+            padding: 10px;
             margin-bottom: 10px;
+            margin-top: 10px;
+            margin-right: 0px;
+            margin-left: 10px;
             position: relative; /* Position relative to contain absolute positioned children */
             z-index: 1;
-            width: 100%; /* Menggunakan lebar 100% dari viewport */
-            height: 150%; /* Fixed height */
+            /*width: 100%;  Menggunakan lebar 100% dari viewport */
+           /* height: 100%; Fixed height */
             box-sizing: border-box; /* Menghitung padding dalam width */
         }
         .article-frame::before {
@@ -192,23 +195,31 @@
     </style>
 </head>
 <body>
+    <nav style="display: flex; justify-content: space-between; align-items: center; padding: 10px; margin-top: 10px; margin-left: 10px; margin-right: 20px;background-color: #35383e; border-radius: 12px;">
+        <img src="SGSlogowht.png" alt="Logo SGS Motor Group" style="height: 50px;">
+        <div style="margin-right: 20px;">
+            <span>
+                <a href="Readme.html"><span style="color: #f6dcac;font-size: 11px; font-weight: bold;">Support</span></a> &nbsp;
+                <a href="services.html"><span style="color: #f6dcac;font-size: 11px; font-weight: bold;">Services</span></a> &nbsp;
+                <a href="projects.html"><span style="color: #f6dcac;font-size: 11px; font-weight: bold;">Projects</span></a> &nbsp;
+                <a href="about.html"><span style="color: #f6dcac;font-size: 11px; font-weight: bold;">About</span></a> &nbsp &nbsp;
+            </span>
+            <button onclick="window.location.href='feedback.html'" style="margin-left: 20px; color: #222831; font-size: 11px; font-weight: bold; background-color: #f6dcac; background-size: cover; border: none; border-radius: 12px; cursor: pointer;">Contact</button>
+        </div>
+    </nav>
     <header>
-        <img src="SGSlogowht.png" alt="Logo SGS Motor Group" style="height: 50px;"> <!-- Path and style adjusted as needed -->
         </form>
-        <h1 style="margin-bottom: 1px;">Selamat datang di SGS Motor Group</h1>
-        <p style="margin-top: 1px;">Website jual beli mobil terpercaya di Depok</p>
+            <h1 style="margin-bottom: 1px;">Selamat datang di SGS Motor Group</h1>
+            <p style="margin-top: 1px;">Website jual beli mobil terpercaya di Depok</p>
         <form action="/search" method="get">
             <input type="text" name="search" placeholder="Search cars..." required style="border-radius: 8px;">
             <button type="submit" style="border-radius: 8px;">Search</button>
         <br>
     </header>
-    <nav>
-        <a href="feedback.html" style="margin-left:20px;"><span style="color: #F6DCAC;font-size: 11px;">Contact</span></a> <span style="color: #F6DCAC;font-size: 12px;">|</span> <a href="Readme.html" style="margin-left:auto;"><span style="color: #F6DCAC;font-size: 11px;">Support</span></a>
-    </nav>
     <main>
         </form>
-        <h2 style="margin-bottom: 1px;">Daftar Mobil dijual</h2>
-        <p style="margin-top: 1px; line-height: 1.5;">Kami menjual segala merk dan tipe mobil dengan kualitas yang sangat baik</p>
+        <h2 style="margin-bottom: 1px;margin-left: 10px;">Daftar Mobil dijual</h2>
+        <p style="margin-top: 1px; line-height: 1.5;margin-left: 10px;">Kami menjual segala merk dan tipe mobil dengan kualitas yang sangat baik</p>
         <article class="article-frame">
             <div class="article-content">
                 <img class="article-content-photo" src="https://img.cintamobil.com/resize/600x-/2023/06/05/20230605231039-daaf.png" alt="Toyota Agya 2014" class="rounded-image" style="max-width:100px;">
