@@ -4,10 +4,10 @@ Car buying and selling website that can serve all Indonesian people
 # Description
 SGSmotor is a car buying and selling website designed to simplify the process of finding your dream car. We aim to provide a seamless experience for customers in their quest for the perfect vehicle.- **Visit our website** [SGSmotor](https://sgsmotor.netlify.app/)
 
-![sgsmotor web](./pics/sgs_ss1.png)
+![sgsmotor web](./asset/images/sgs_ss1.png)
 
 You can now contact us by whatsapp!
-![sgsmotor web](./pics/sgs_ss2.png)
+![sgsmotor web](./asset/images/sgs_ss2.png)
 
 # Usage
 The use of this website is for car seekers to find their dream car to buy. Apart from that, car seekers can also create special posts to search for cars
@@ -34,7 +34,7 @@ _____
 Welcome to my GitHub profile! I'm Farros, a passionate software engineer. This README provides an overview of my projects, skills, and interests in the field of software engineering.
 
 ## About Me
-<img src="./pics/farros_ai.jpg" alt="Farros Profile" width="200">
+<img src="./asset/images/farros_ai.jpg" alt="Farros Profile" width="200">
 
 - **Name:** Farros H R
 - **Location:** [Yogyakarta, Indonesia](https://maps.app.goo.gl/ZwMCvT9GLL3xjPG17)
