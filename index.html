@@ -8,8 +8,9 @@
     <meta content="sgsmotor, jual beli mobil, mobil bekas, mobil baru, dealer mobil, mobil second" name="keywords">
     <link rel="icon" href="./asset/images/SGSicon32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="./asset/style/index.css">
+    <script src="./scripts/script.js"></script>
 </head>
-<body>
+<body class="fontforbody">
     <nav style="display: flex; justify-content: space-between; align-items: center; padding: 10px; margin-top: 10px; margin-left: 10px; margin-right: 0px; background-color: #35383e; border-radius: 12px;">
         <img src="./asset/images/SGSlogowht.png" alt="Logo SGS Motor Group" style="height: auto; max-height: 50px; width: auto; max-width: 100%; min-width: 20px;">
         <div style="margin-right: 20px; max-width: 100%; min-width: 20px; display: flex; align-items: center;">
@@ -19,7 +20,7 @@
                 <a href="projects.html" style="color: #f6dcac; font-size: calc(8px + 0.5vw); font-weight: bold; text-decoration: none;">Projects</a> &nbsp;
                 <a href="Readme.html" style="color: #f6dcac; font-size: calc(8px + 0.5vw); font-weight: bold; text-decoration: none;">About</a>
             </span>
-            <button onclick="const contactButton = document.getElementById('contactUsButton'); contactButton.scrollIntoView({ behavior: 'smooth', block: 'start' }); setTimeout(() => contactButton.click(), 500);" style="margin-left: 20px; color: #222831; font-size: calc(8px + 0.5vw); font-weight: bold; background-color: #f6dcac; border: none; border-radius: 12px; cursor: pointer;">Contact</button>
+            <button class="contact-button" onclick="const contactButton = document.getElementById('contactUsButton'); contactButton.scrollIntoView({ behavior: 'smooth', block: 'start' }); setTimeout(() => contactButton.click(), 500);" style="margin-left: 20px; color: #222831; font-size: calc(8px + 0.5vw); font-weight: bold; border: none; border-radius: 12px; cursor: pointer;">Contact</button>
         </div>
     </nav>
     <header>
@@ -28,7 +29,7 @@
             <p style="margin-top: 1px;">Website jual beli mobil terpercaya di Depok</p>
         <form action="/search" method="get">
             <input type="text" name="search" placeholder="Search cars..." required style="border-radius: 8px;">
-            <button type="submit" style="border-radius: 8px;">Search</button>
+            <button class="search-button" type="submit" style="border-radius: 8px;">Search</button>
         <br>
     </header>
     <main>
@@ -121,7 +122,7 @@
         </article>
     </main>
 
-    <section>
+    <section class="thesection">
     <button id="contactUsButton" onclick="openContactForm()">Contact Us</button>
 
     <div id="contactFormPopup" class="popup-form" style="display:none;">
@@ -153,32 +154,6 @@
         <p>&copy; 2002 SGS Motor Group</p>
     </footer>
     <script>
-        var exampleVariable = 'Hello, world!';
-        console.log(exampleVariable); // This will output 'Hello, world!' in the console
-        function toggleHiddenText(event) {
-            const button = event.target;
-            console.log(button);
-            const articleContent = button.closest('.article-content'); // Find the closest parent with the class 'article-content'
-            console.log(articleContent);
-            const hiddenText = articleContent.querySelector('.hidden-text'); // Find the hidden text within that parent
-            console.log(hiddenText);
-            if (hiddenText.style.display === 'none' || hiddenText.style.display === '') {
-                hiddenText.style.display = 'block';
-                hiddenText.style.maxHeight = '500px'; // Adjust max-height for animation
-                button.textContent = 'Show Less...'; // Change button text to 'Show Less...'
-            } else {
-                hiddenText.style.display = 'none';
-                hiddenText.style.maxHeight = '0px'; // Reset max-height for animation
-                button.textContent = 'Show More...'; // Change button text back to 'Show More...'
-            }
-        }
-        function openContactForm() {
-            document.getElementById('contactFormPopup').style.display = 'flex';
-        }
-
-        function closeContactForm() {
-            document.getElementById('contactFormPopup').style.display = 'none';
-        }
     </script>
 </body>
 </html>
