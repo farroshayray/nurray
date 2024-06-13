@@ -2,7 +2,7 @@
 Car buying and selling website that can serve all Indonesian people
 
 # Description
-SGSmotor is a car buying and selling website designed to simplify the process of finding your dream car. We aim to provide a seamless experience for customers in their quest for the perfect vehicle.
+SGSmotor is a car buying and selling website designed to simplify the process of finding your dream car. We aim to provide a seamless experience for customers in their quest for the perfect vehicle.- **Visit our website** [SGSmotor](https://sgsmotor.netlify.app/)
 
 ![sgsmotor web](./pics/sgs_ss1.png)
 
@@ -15,6 +15,11 @@ The use of this website is for car seekers to find their dream car to buy. Apart
 # Support
 
 - **Email:** [farros.hr@gmail.com](mailto:farros.hr@gmail.com)
+
+# Roadmap
+- [ ] Create a more user-friendly interface
+- [ ] Implement a more efficient search algorithm
+- [ ] Develop a chatbot to help users with their queries
 
 _____
 _____
