@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Jual Beli Mobil-SGSmotor</title>
+    <meta content="Website ini menjual berbagai macam mobil dengan harga yang bersaing dan kualitas yang sangat baik" name="description">
+    <meta content="sgsmotor, jual beli mobil, mobil bekas, mobil baru, dealer mobil, mobil second" name="keywords">
+    <link rel="icon" href="./asset/images/SGSicon32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./asset/style/index.css">
+    <script src="./scripts/script.js"></script>
+</head>
+<body class="fontforbody">
+    <nav style="display: flex; justify-content: space-between; align-items: center; padding: 10px; margin-top: 10px; margin-left: 10px; margin-right: 0px; background-color: #35383e; border-radius: 12px;">
+        <img src="./asset/images/SGSlogowht.png" alt="Logo SGS Motor Group" style="height: auto; max-height: 50px; width: auto; max-width: 100%; min-width: 20px;">
+        <div style="margin-right: 20px; max-width: 100%; min-width: 20px; display: flex; align-items: center;">
+            <span style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
+                <a href="feedback.html" class="nav-link1" style="color: #f6dcac; font-size: calc(8px + 0.5vw); font-weight: bold; text-decoration: none;">Support</a> &nbsp; <!-- calc(8px + 0.5vw) membuat font-size bisa berubah sesuai dengan viewport -->
+                <a href="./page_services/" class="nav-link1" style="color: #f6dcac; font-size: calc(8px + 0.5vw); font-weight: bold; text-decoration: none;">Services</a> &nbsp;
+                <a href="projects.html" class="nav-link1" style="color: #f6dcac; font-size: calc(8px + 0.5vw); font-weight: bold; text-decoration: none;">Projects</a> &nbsp;
+                <a href="Readme.html" class="nav-link1" style="color: #f6dcac; font-size: calc(8px + 0.5vw); font-weight: bold; text-decoration: none;">About</a>
+            </span>
+            <button class="contact-button" onclick="const contactButton = document.getElementById('contactUsButton'); contactButton.scrollIntoView({ behavior: 'smooth', block: 'start' }); setTimeout(() => contactButton.click(), 500);" style="margin-left: 20px; color: #222831; font-size: calc(8px + 0.5vw); font-weight: bold; border: none; border-radius: 12px; cursor: pointer;">Contact</button>
+        </div>
+    </nav>
+    <header>
+        </form>
+            <h1 style="margin-bottom: 1px;">Selamat datang di SGS Motor Group</h1>
+            <p style="margin-top: 1px;">Website jual beli mobil terpercaya di Depok</p>
+        <form action="/search" method="get">
+            <input type="text" name="search" placeholder="Search cars..." required style="border-radius: 8px;">
+            <button class="search-button" type="submit" style="border-radius: 8px;">Search</button>
+        <br>
+    </header>
+    <main>
+        </form>
+        <h2 style="margin-bottom: 1px;margin-left: 10px;">Daftar Mobil dijual</h2>
+        <p style="margin-top: 1px; line-height: 1.5;margin-left: 10px;">Kami menjual segala merk dan tipe mobil dengan kualitas yang sangat baik</p>
+        <article class="article-frame">
+            <div class="article-content">
+                <img class="article-content-photo" src="https://img.cintamobil.com/resize/600x-/2023/06/05/20230605231039-daaf.png" alt="Toyota Agya 2014" class="rounded-image" style="max-width:100px;">
+                <h4>Toyota Agya AT 2014</h4>
+                    <p>Harga: Rp. 91.000.000</p>
+                    <p style="margin-bottom: 0;">Tipe: G Matic</p>
+                <div class="hidden-text" style="margin-left: -10px;">
+                    <p style="margin-top: 0;">Warna: Putih</p>
+                    <p>Fitur: Power Steering, ABS, ESP, Airbags, Air Conditioning</p>
+                    <p>Tahun: 2014</p>
+                    <p>Transmisi: Automatic</p>
+                    <p>Km: 90.000</p>
+                </div>
+                <button class="show-more-button" onclick="toggleHiddenText(event)">Show More...</button>
+            </div>
+        </article>
+
+        <article class="article-frame">
+            <div class="article-content">
+                <img src="https://img.cintamobil.com/2018/07/17/KM1pHMws/20180627130446hdr-906c.jpg" alt="Wuling Confero S 2018" class="rounded-image" style="max-width:100px;">
+                <h4>Wuling Confero S MT 2018</h4>
+                    <p>Harga: Rp. 99.000.000</p>
+                    <p style="margin-bottom: 0;">Tipe: S Lux</p>
+                <div class="hidden-text" style="margin-left: -10px;">
+                    <p style="margin-top: 0;">Warna: Hitam</p>
+                    <p>Fitur: Power Steering, ABS, ESP, Airbags, Air Conditioning</p>
+                    <p>Tahun: 2018</p>
+                    <p>Transmisi: Manual</p>
+                    <p>Km: 33.000</p>
+                </div>
+                <button class="show-more-button" onclick="toggleHiddenText(event)">Show More...</button>
+            </div>
+        </article>
+
+        <article class="article-frame">
+            <div class="article-content">
+                <img src="https://media.karousell.com/media/photos/products/2022/11/3/mitsubishi_expander_sport_2018_1667456550_bf6e0a64_progressive.jpg" alt="Mitsubishi Expander Sport 2018" class="rounded-image" style="max-width:100px;">
+                <h4>Mitsubishi Expander Sport AT 2018</h4>
+                    <p>Harga: Rp. 185.000.000</p>
+                    <p style="margin-bottom: 0;">Tipe: Sport</p>
+                <div class="hidden-text" style="margin-left: -10px;">
+                    <p style="margin-top: 0;">Warna: Bronze</p>
+                    <p>Fitur: Power Steering, ABS, ESP, Airbags, Air Conditioning</p>
+                    <p>Tahun: 2018</p>
+                    <p>Transmisi: Automatic</p>
+                    <p>Km: 106.000</p>
+                </div>
+                <button class="show-more-button" onclick="toggleHiddenText(event)">Show More...</button>
+            </div>
+        </article>
+
+        <article class="article-frame">
+            <div class="article-content">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGRad0NWW-m-EYP2soD-liILwJq0UuslkZQQ&s" alt="Toyota Alphard 2019" class="rounded-image" style="max-width:100px;">
+                <h4>Toyota Alphard AT 2019</h4>
+                    <p>Harga: Rp. 1.200.000.000</p>
+                    <p style="margin-bottom: 0;">Tipe: G Matic</p>
+                <div class="hidden-text" style="margin-left: -10px;">
+                    <p style="margin-top: 0;">Warna: Hitam</p>
+                    <p>Fitur: Power Steering, ABS, ESP, Airbags, Air Conditioning</p>
+                    <p>Tahun: 2019</p>
+                    <p>Transmisi: Automatic</p>
+                    <p>Km: 37.000</p>
+                </div>
+                <button class="show-more-button" onclick="toggleHiddenText(event)">Show More...</button>
+            </div>
+        </article>
+
+        <article class="article-frame">
+            <div class="article-content">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj7yTNyrsnJ6GyGs6wba0StOOMl76bh7PQumDsM2ZiDTZnYGKNoVGWvQS8_71W6kTTOCg&usqp=CAU" alt="Daihatsu Xenia 2023" class="rounded-image" style="max-width:100px;">
+                <h4>Daihatsu Xenia R 2023</h4>
+                    <p>Harga: Rp. 200.000.000</p>
+                    <p style="margin-bottom: 0;">Tipe: R</p>
+                <div class="hidden-text" style="margin-left: -10px;">
+                    <p style="margin-top: 0;">Warna: Silver</p>
+                    <p>Fitur: Power Steering, ABS, ESP, Airbags, Air Conditioning</p>
+                    <p>Tahun: 2023</p>
+                    <p>Transmisi: Automatic</p>
+                    <p>Km: 31.000</p>
+                </div>
+                <button class="show-more-button" onclick="toggleHiddenText(event)">Show More...</button>
+            </div>
+        </article>
+    </main>
+
+    <section class="thesection">
+    <button id="contactUsButton" onclick="openContactForm()">Contact Us</button>
+
+    <div id="contactFormPopup" class="popup-form" style="display:none;">
+        <div class="popup-content">
+            <span class="close-button" onclick="closeContactForm()">&times;</span>
+            <span class="article-content-h2">Contact Us</span><br><br>
+            <form style="position: relative; z-index: 5;">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name"><br><br>
+                <label for="gender">Gender:</label><br>
+                <input type="radio" id="gender" name="gender" value="Male" style="font-size: 14px;"> Male
+                <input type="radio" id="gender" name="gender" value="Female" style="font-size: 14px;"> Female <br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email"><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="21" required placeholder="Enter your message"></textarea><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+        <!-- WhatsApp Contact Button -->
+        <a href="https://wa.me/6285158444204?text=halo%2C%20saya%20ingin%20bertanya%20tentang%20produk-produk%20yang%20dijual%20di%20SGSmotor" target="_blank" style="position: fixed; bottom: 2px; right: 2px; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; z-index: 1000;">
+            <img src="https://img.icons8.com/?size=100&id=BkugfgmBwtEI&format=png&color=000000" style="vertical-align: middle; margin-right: -10px; width: 50px;">
+        </a>
+    </section>
+    <footer>
+        <div class="aboutus">About Us</div>
+        <p style="line-height: 1.5;">Perusahaan kami bergerak di bidang jual beli mobil dengan kualitas terbaik di kelasnya dan harga yang bersaing sejak tahun 2002.</p>
+        <p>&copy; 2002 SGS Motor Group</p>
+    </footer>
+    <script>
+    </script>
+</body>
+</html>
+
+
