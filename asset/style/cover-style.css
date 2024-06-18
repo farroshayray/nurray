@@ -231,12 +231,11 @@ input[type="radio"] {
     margin-bottom: 300px;
 }
 #contactUsButton {
-    border-radius: 0.5vw;
+    border-radius: 0.6vw;
     border: none;
     background-color: #50727B;
 }
 #contactUsButton:hover {
-    border-radius: 0.5vw;
     border: none;
     background-color: #344955;
 }
