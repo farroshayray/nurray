@@ -44,6 +44,10 @@ p {
     width: 100%; /* Menggunakan lebar 100% dari container */
     box-sizing: border-box; /* Menghitung padding dan border dalam width */
 } 
+span>.nav-link1:hover {
+    background-color: #575148;
+    border-radius: 15px;
+}
 .show-more-button {
     background-color: #f6dcac7c;
     color: #01204E;
