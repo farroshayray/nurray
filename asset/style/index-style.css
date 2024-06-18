@@ -93,13 +93,13 @@ header>.logo-sgs {
 }
 .aboutus {
     color: #50727B;
-    font-size: 12px;
+    font-size: 2vw;
     width: 100%; /* Menggunakan lebar 100% dari container */
     box-sizing: border-box; /* Menghitung padding dan border dalam width */
 }
 .aboutus-text {
     color: #50727B;
-    font-size: 12px;
+    font-size: 1.5vw;
     margin-top: 0.1vw;
     margin-bottom: 0.1vw;
 }
