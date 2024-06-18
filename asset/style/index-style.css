@@ -24,7 +24,7 @@
     margin-bottom: 10vw;
 }
 .nav-bar1>a {
-    color: #ffffff;
+    color: #a39d9d;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-size: 1.5vw;
@@ -36,7 +36,7 @@
 }
 
 header>.logo-sgs {
-    width: 15vw;
+    width: 12vw;
 }
 
 .welcome-text1 {grid-area: wt1; background-color: #B9B4C7;}
@@ -65,8 +65,8 @@ header>.logo-sgs {
     'wt3 wt3 wt4 wt4 wt4 wt4 wt4';
     gap: 2%;
     background-size: cover;
-    width: 50vw;
-    height: 40vw;
+    width: 80%;
+    height: 50vw;
     margin: 10% auto; /* Centering the container */
     border-style: solid;
     border-color: black;

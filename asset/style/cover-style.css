@@ -1,3 +1,18 @@
+/*color pallate*/
+:root {
+    --color-dark: #222831;
+    --color1: #35374B;
+    --color2: #344955;
+    --color3: #50727B;
+    --color4: #78A083;
+    --color5: #99B396;
+    --color6: #B5C6A6;
+    --color7: #D2D9C7;
+    --color8: #EFF1E0;
+    --color9: #F9F9E7;
+    --color10: #FFFFFF;
+}
+
 article-framebody {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,28 +23,28 @@ article-framebody {
     font-family: 'roboto', sans-serif;
 }
 h1 {
-    color: #F6DCAC; /* Warna teks #F6DCAC*/
+    color: #50727B; /* Warna teks #F6DCAC*/
     width: 100%; /* Menggunakan lebar 100% dari container */
     box-sizing: border-box; /* Menghitung padding dan border dalam width */
 }
 h2 {
-    color: #F6DCAC;
+    color: #50727B;
     width: 100%; /* Menggunakan lebar 100% dari container */
     box-sizing: border-box; /* Menghitung padding dan border dalam width */
 }
 h3 {
-    color: #F6DCAC;
+    color: #50727B;
     width: 100%; /* Menggunakan lebar 100% dari container */
     box-sizing: border-box; /* Menghitung padding dan border dalam width */
 }
 .aboutus {
-    color: #F6DCAC;
+    color: #50727B;
     font-size: 12px;
     width: 100%; /* Menggunakan lebar 100% dari container */
     box-sizing: border-box; /* Menghitung padding dan border dalam width */
 }
 h4 {
-    color: #f6dcacbd;
+    color: #50727B;
     font-size: 12px;
     width: 100%; /* Menggunakan lebar 100% dari container */
     box-sizing: border-box; /* Menghitung padding dan border dalam width */
@@ -38,18 +53,18 @@ h4 {
     border-radius: 8px;
 }
 p {
-    color: #F6DCAC;
+    color: #50727B;
     font-size: 9px;
     line-height: 0.5; /* Adjusts the spacing between lines in paragraphs */
     width: 100%; /* Menggunakan lebar 100% dari container */
     box-sizing: border-box; /* Menghitung padding dan border dalam width */
 } 
 span>.nav-link1:hover {
-    background-color: #575148;
-    border-radius: 15px;
+    background-color: #50727B;
+    border-radius: 1vw;
 }
 .show-more-button {
-    background-color: #f6dcac7c;
+    background-color: #50727B;
     color: #01204E;
     border: none;
     border-radius: 5px;
@@ -60,7 +75,7 @@ span>.nav-link1:hover {
     z-index: 3;
 }
 .show-more-button:hover {
-    background-color: #E5C89C;
+    background-color: #749098;
 }
 body {
     background-color: #222831; /* Light grey background for better readability */
@@ -98,7 +113,7 @@ body {
     z-index: 1; /* Ensures it is above the pseudo-element */
 }
 .article-content p {
-    color: #EEE9DA; /* Brighter text color */
+    color: #bbd1ca; /* Brighter text color */
     position: relative;
     opacity: 1;
     z-index: 1;
@@ -166,7 +181,7 @@ body {
 }
 
 .popup-content {
-        background-color: #f6dcac7c;
+        background-color: #50727bd1;
         padding: 50px; /* Reduced padding for smaller size */
         border-radius: 25px; /* Smaller border radius */
         width: 150px; /* Reduced width */
@@ -177,7 +192,7 @@ body {
         align-items: center;
 }
 .article-content-h2 {
-    color: #f6dcac;
+    color: #cecece;
     width: 100%; /* Menggunakan lebar 100% dari container */
     box-sizing: border-box; /* Menghitung padding dan border dalam width */
     font-size: 20px;
@@ -189,19 +204,21 @@ body {
 }
 /* Mengatur warna latar belakang radio button saat terpilih */
 input[type="radio"] {
-    accent-color: #f6dcac; /* Warna hijau */
+    accent-color: #50727B; /* Warna hijau */
 }
 .contact-button {
-    background-color:#f6dcac7c;
+    background-color:#50727B;
 }
 .contact-button:hover {
-    background-color:#E5C89C;
+    background-color:#749098;
 }
 .search-button {
-    background-color:#7373727c;
+    background-color:#e6e6e67c;
+    border: none;
+    border-radius: 0.5vw;
 }
 .search-button:hover {
-    background-color:#f0f0f0;
+    background-color: #5151517c
 }
 .background-cover {
     background-color:#222831;
@@ -212,4 +229,18 @@ input[type="radio"] {
     margin-right: 300px;
     margin-top: 100px;
     margin-bottom: 300px;
+}
+#contactUsButton {
+    border-radius: 0.5vw;
+    border: none;
+    background-color: #50727B;
+}
+#contactUsButton:hover {
+    border-radius: 0.5vw;
+    border: none;
+    background-color: #344955;
+}
+.contact-form {
+    border: none;
+    border-radius: 0.3vw;
 }
