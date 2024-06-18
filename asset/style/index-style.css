@@ -27,7 +27,7 @@
     color: #a39d9d;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5vw;
+    font-size: 1.5vw 100%;
     padding: 0.5vw;
 }
 .nav-bar1>a:hover {
@@ -37,6 +37,7 @@
 
 header>.logo-sgs {
     width: 12vw;
+    max-width: 100%;
 }
 
 .welcome-text1 {grid-area: wt1; background-color: #B9B4C7;}
@@ -93,13 +94,13 @@ header>.logo-sgs {
 }
 .aboutus {
     color: #50727B;
-    font-size: 2vw;
+    font-size: 100%;
     width: 100%; /* Menggunakan lebar 100% dari container */
     box-sizing: border-box; /* Menghitung padding dan border dalam width */
 }
 .aboutus-text {
     color: #50727B;
-    font-size: 1.5vw;
+    font-size: 100%;
     margin-top: 0.1vw;
     margin-bottom: 0.1vw;
 }
