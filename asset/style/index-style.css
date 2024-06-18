@@ -45,11 +45,11 @@ header>.logo-sgs {
 .welcome-text4 {grid-area: wt4; background-color: #7E6363;}
 .welcome-text5 {grid-area: wt5; background-color: #99B396;}
 
-.welcome-text1:hover {background-color: #35374B;}
-.welcome-text2:hover {background-color: #35374B;}
-.welcome-text3:hover {background-color: #35374B;}
-.welcome-text4:hover {background-color: #35374B;}
-.welcome-text5:hover {background-color: #35374B;}
+.welcome-text1:hover {background-color: #a3a3a382;}
+.welcome-text2:hover {background-color: #a3a3a382;}
+.welcome-text3:hover {background-color: #a3a3a382;}
+.welcome-text4:hover {background-color: #a3a3a382;}
+.welcome-text5:hover {background-color: #a3a3a382;}
 
 .cover-container {
     background-color: #344955;
@@ -90,4 +90,16 @@ header>.logo-sgs {
     font-style: normal;
     text-decoration: none;
     color: #2f3639;
+}
+.aboutus {
+    color: #50727B;
+    font-size: 12px;
+    width: 100%; /* Menggunakan lebar 100% dari container */
+    box-sizing: border-box; /* Menghitung padding dan border dalam width */
+}
+.aboutus-text {
+    color: #50727B;
+    font-size: 12px;
+    margin-top: 0.1vw;
+    margin-bottom: 0.1vw;
 }
