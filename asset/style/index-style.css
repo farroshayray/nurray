@@ -52,39 +52,33 @@ header>.logo-sgs {
 .welcome-text5:hover {background-color: #35374B;}
 
 .cover-container {
-background-color: #344955;
-display: grid;
-grid-template-areas:
-'wt1 wt1 wt2 wt2 wt5 wt5 wt5'
-'wt1 wt1 wt2 wt2 wt5 wt5 wt5'
-'wt1 wt1 wt2 wt2 wt5 wt5 wt5'
-'wt1 wt1 wt2 wt2 wt5 wt5 wt5'
-'wt3 wt3 wt2 wt2 wt5 wt5 wt5'
-'wt3 wt3 wt4 wt4 wt4 wt4 wt4'
-'wt3 wt3 wt4 wt4 wt4 wt4 wt4'
-'wt3 wt3 wt4 wt4 wt4 wt4 wt4';
-gap: 2%;
-background-size: cover;
-width: 70vw;
-height: 50vw;
-margin-left: 10%;
-margin-right: 10%;
-margin-top: 5%;
-border-style: solid;
-border-color: black;
-border-width: 0;
-padding: 1%;
-border-radius: 3vw;
-
-
-
+    background-color: #344955;
+    display: grid;
+    grid-template-areas:
+    'wt1 wt1 wt2 wt2 wt5 wt5 wt5'
+    'wt1 wt1 wt2 wt2 wt5 wt5 wt5'
+    'wt1 wt1 wt2 wt2 wt5 wt5 wt5'
+    'wt1 wt1 wt2 wt2 wt5 wt5 wt5'
+    'wt3 wt3 wt2 wt2 wt5 wt5 wt5'
+    'wt3 wt3 wt4 wt4 wt4 wt4 wt4'
+    'wt3 wt3 wt4 wt4 wt4 wt4 wt4'
+    'wt3 wt3 wt4 wt4 wt4 wt4 wt4';
+    gap: 2%;
+    background-size: cover;
+    width: 50vw;
+    height: 40vw;
+    margin: 10% auto; /* Centering the container */
+    border-style: solid;
+    border-color: black;
+    border-width: 0;
+    padding: 1%;
+    border-radius: 3vw;
 }
 .cover-container>a {
     display: flex;
     padding: 1%;
     border-radius: 3vw;
-    text-align: center;
-    font-size: 3vw;
+    font-size: 2vw;
     background-size: 100%;
     text-align: center;
     justify-content: center;
