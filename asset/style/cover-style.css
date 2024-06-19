@@ -11,6 +11,7 @@
     --color8: #EFF1E0;
     --color9: #F9F9E7;
     --color10: #FFFFFF;
+    --color11: #a39d9d;
 }
 
 article-framebody {
@@ -23,28 +24,28 @@ article-framebody {
     font-family: 'roboto', sans-serif;
 }
 h1 {
-    color: #50727B; /* Warna teks #F6DCAC*/
+    color: var(--color11); /* Warna teks #F6DCAC*/
     width: 100%; /* Menggunakan lebar 100% dari container */
     box-sizing: border-box; /* Menghitung padding dan border dalam width */
 }
 h2 {
-    color: #50727B;
+    color: var(--color11);
     width: 100%; /* Menggunakan lebar 100% dari container */
     box-sizing: border-box; /* Menghitung padding dan border dalam width */
 }
 h3 {
-    color: #50727B;
+    color: var(--color11);
     width: 100%; /* Menggunakan lebar 100% dari container */
     box-sizing: border-box; /* Menghitung padding dan border dalam width */
 }
 .aboutus {
-    color: #50727B;
+    color: var(--color11);
     font-size: 12px;
     width: 100%; /* Menggunakan lebar 100% dari container */
     box-sizing: border-box; /* Menghitung padding dan border dalam width */
 }
 h4 {
-    color: #50727B;
+    color: var(--color11);
     font-size: 12px;
     width: 100%; /* Menggunakan lebar 100% dari container */
     box-sizing: border-box; /* Menghitung padding dan border dalam width */
@@ -53,18 +54,27 @@ h4 {
     border-radius: 8px;
 }
 p {
-    color: #50727B;
+    color: var(--color11);
     font-size: 9px;
     line-height: 0.5; /* Adjusts the spacing between lines in paragraphs */
     width: 100%; /* Menggunakan lebar 100% dari container */
     box-sizing: border-box; /* Menghitung padding dan border dalam width */
 } 
-span>.nav-link1:hover {
-    background-color: #50727B;
+span>.nav-link1 {
+    background-color: transparent;
     border-radius: 1vw;
+    color: var(--color11);
+    font-size: calc(8px + 0.5vw);
+    font-weight: bold;
+    text-decoration: none;
+}
+span>.nav-link1:hover {
+    background-color: var(--color11);
+    border-radius: 1vw;
+    color: #222831;
 }
 .show-more-button {
-    background-color: #50727B;
+    background-color: var(--color11);
     color: #01204E;
     border: none;
     border-radius: 5px;
@@ -113,7 +123,7 @@ body {
     z-index: 1; /* Ensures it is above the pseudo-element */
 }
 .article-content p {
-    color: #bbd1ca; /* Brighter text color */
+    color: var(--color11); /* Brighter text color */
     position: relative;
     opacity: 1;
     z-index: 1;
@@ -181,7 +191,7 @@ body {
 }
 
 .popup-content {
-        background-color: #50727bd1;
+        background-color: #a39d9d96;
         padding: 50px; /* Reduced padding for smaller size */
         border-radius: 25px; /* Smaller border radius */
         width: 150px; /* Reduced width */
@@ -204,13 +214,16 @@ body {
 }
 /* Mengatur warna latar belakang radio button saat terpilih */
 input[type="radio"] {
-    accent-color: #50727B; /* Warna hijau */
+    accent-color: var(--color11); /* Warna hijau */
 }
 .contact-button {
-    background-color:#50727B;
+    background-color:var(--color11);
+    
 }
 .contact-button:hover {
-    background-color:#749098;
+    background-color:#5151517c;
+    color: var(--color11);
+    
 }
 .search-button {
     background-color:#e6e6e67c;
@@ -233,7 +246,7 @@ input[type="radio"] {
 #contactUsButton {
     border-radius: 0.6vw;
     border: none;
-    background-color: #50727B;
+    background-color: var(--color11);
 }
 #contactUsButton:hover {
     border: none;
