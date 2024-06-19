@@ -52,6 +52,20 @@ header>.logo-sgs {
     background-color: transparent;
     margin-left: 1vw;
 }
+#header-container1 {
+    overflow: hidden;
+}
+.sticky {
+    position: fixed;
+    background-color: #1e1e21af;
+    border-radius: 1vw;
+    width: calc(99.4% - 2vw);
+    margin: 0 1vw;
+    height: 8vw;
+    align-items: center;
+    display: flex;
+    background-size: cover;
+}
 
 .section-welcome {
 background-color: #ffffff18;
@@ -60,7 +74,6 @@ height: 70vw;
 margin-top: 1vw;
 margin-bottom: 1vw;
 border-radius: 2vw;
-display: flex;
 align-items: center;
 align-items: center;
 justify-content: center;
@@ -68,11 +81,11 @@ display: flex;
 
 }
 
-.welcome-text1 {grid-area: wt1; background-color: #B9B4C7;}
-.welcome-text2 {grid-area: wt2; background-color: #BB8493;}
-.welcome-text3 {grid-area: wt3; background-color: #57A6A1;}
-.welcome-text4 {grid-area: wt4; background-color: #7E6363;}
-.welcome-text5 {grid-area: wt5; background-color: #99B396;}
+.welcome-text1 {grid-area: wt1; background-color: #B9B4C7; box-sizing: border-box;}
+.welcome-text2 {grid-area: wt2; background-color: #BB8493; box-sizing: border-box;}
+.welcome-text3 {grid-area: wt3; background-color: #57A6A1; box-sizing: border-box;}
+.welcome-text4 {grid-area: wt4; background-color: #7E6363; box-sizing: border-box;}
+.welcome-text5 {grid-area: wt5; background-color: #99B396; box-sizing: border-box;}
 
 .welcome-text1:hover {background-color: #a3a3a382;}
 .welcome-text2:hover {background-color: #a3a3a382;}
@@ -144,4 +157,5 @@ display: flex;
     align-items: left;
     align-content: center;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }

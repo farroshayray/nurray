@@ -14,7 +14,7 @@
     
 </head>
 <body>
-    <div class="header-container">
+    <div class="header-container" id="header-container1">
         <header class="header-logo">
             <img class="logo-sgs" src="./asset/images/SGSlogoGreen.png">
         </header>
@@ -40,5 +40,21 @@
         <p class="aboutus-text" style="line-height: 1.5;">Perusahaan kami bergerak di bidang jual beli mobil dengan kualitas terbaik di kelasnya dan harga yang bersaing sejak tahun 2002.</p>
         <p class="aboutus-text">&copy; 2002 SGS Motor Group</p>
     </footer>
+
+    <script>
+        window.onscroll = function() {
+            scrollNav()
+        };
+        var headerContainer1 = document.getElementById("header-container1");
+        var sticky = headerContainer1.offsetTop;
+
+        function scrollNav() {
+            if (window.pageYOffset >= sticky) {
+                headerContainer1.classList.add("sticky")
+            } else {
+                headerContainer1.classList.remove("sticky");
+            }
+        }
+    </script>
 </body>
 </html>
