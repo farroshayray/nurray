@@ -55,6 +55,7 @@
 .article-text {
     background-color: transparent;
     font-family: 'Roboto', sans-serif;
+    font-size: 1.1vw;
 }
 .article-header {
     padding: 2% 5% 0% 5%;
@@ -108,5 +109,10 @@ color: #a39d9d;
         font-size: 4vw;
         border-radius: 1vw;
         padding: 1vw;
+    }
+    .article-text {
+        background-color: transparent;
+        font-family: 'Roboto', sans-serif;
+        font-size: 3vw;
     }
 }
