@@ -59,7 +59,7 @@ Welcome to my GitHub profile! I'm Farros, a passionate software engineer. This R
 - **Description:** A full-stack web application developed using `React`.
 - **Features:** product listing, shopping cart, order processing, direct whatsapp chat.
 - **Technologies:** `React`, `HTML/CSS`.
-- **Repository:** [SGSmotor](https://www.sgsmotor.com)
+- **Repository:** [SGSmotor](https://github.com/farroshayray/SGSmotor)
 
 ## Projects
 ### Project 2: Surveilance detection system
