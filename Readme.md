@@ -9,6 +9,9 @@ SGSmotor is a car buying and selling website designed to simplify the process of
 You can now contact us by whatsapp!
 ![sgsmotor web](./asset/images/sgs_ss2.png)
 
+Feel the responsive web design, it is easy to use
+![sgsmotor web](./asset/images/sgs_ss3.png)
+
 # Usage
 The use of this website is for car seekers to find their dream car to buy. Apart from that, car seekers can also create special posts to search for cars
 
