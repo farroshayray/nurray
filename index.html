@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./asset/style/index-style.css">
+    <script src="./scripts/index.js"></script>
     
 </head>
 <body>
@@ -19,11 +20,11 @@
             <img class="logo-sgs" src="./asset/images/SGSlogoGreen.png">
         </header>
         <nav class="nav-bar1">
-            <a href="index.html">Home</a>
-            <a href="index.html">Services</a>
-            <a href="index.html">Projects</a>
-            <a href="index.html">About</a>
-            <a href="index.html">Support</a>
+            <div class="ham-button" onclick="createHamButtonDiv(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
         </nav>
     </div>
     <section class="section-welcome">
@@ -40,21 +41,5 @@
         <p class="aboutus-text" style="line-height: 1.5;">Perusahaan kami bergerak di bidang jual beli mobil dengan kualitas terbaik di kelasnya dan harga yang bersaing sejak tahun 2002.</p>
         <p class="aboutus-text">&copy; 2002 SGS Motor Group</p>
     </footer>
-
-    <!-- <script>
-        window.onscroll = function() {
-            scrollNav()
-        };
-        var headerContainer1 = document.getElementById("header-container1");
-        var sticky = headerContainer1.offsetTop;
-
-        function scrollNav() {
-            if (window.pageYOffset >= sticky) {
-                headerContainer1.classList.add("sticky")
-            } else {
-                headerContainer1.classList.remove("sticky");
-            }
-        }
-    </script> -->
 </body>
 </html>

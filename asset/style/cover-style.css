@@ -229,6 +229,7 @@ input[type="radio"] {
     background-color:#e6e6e67c;
     border: none;
     border-radius: 0.5vw;
+    cursor: pointer;
 }
 .search-button:hover {
     background-color: #5151517c
@@ -247,6 +248,7 @@ input[type="radio"] {
     border-radius: 0.6vw;
     border: none;
     background-color: var(--color11);
+    cursor: pointer;
 }
 #contactUsButton:hover {
     border: none;
