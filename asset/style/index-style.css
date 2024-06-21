@@ -301,9 +301,6 @@ display: flex;
     .ham-button-div {
         background-color: transparent;
         margin-right: 2vw;
-        border-style: solid;
-        border-color: #99B396;
-        border-width: 0.1vw;
     }
     .ham-button-div>a {
         background-color: #222831;
@@ -319,9 +316,6 @@ display: flex;
         display: inline-block;
         cursor: pointer;
         background-color: transparent;
-        border-style: solid;
-        border-color: #99B396;
-        border-width: 0.1vw;
     }
   
     .bar1, .bar2, .bar3 {
