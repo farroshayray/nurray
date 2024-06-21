@@ -231,10 +231,10 @@ display: flex;
 .popup-content {
     background-color: #a39d9d96;
     padding: 2vw; /* Reduced padding for smaller size */
-    border-radius: 25px; /* Smaller border radius */
-    width: max-content; /* Reduced width */
+    border-radius: 3vw; /* Smaller border radius */
+    width: 25vw; /* Reduced width */
     position: relative;
-    top: 25px; /* Adjusted top position for smaller size */
+    top: 2vw; /* Adjusted top position for smaller size */
     justify-content: center;
     align-items: center;
 }
@@ -251,9 +251,18 @@ display: flex;
     cursor:pointer;
     background-color: transparent;
 }
+.radio-text {
+    color: #0a0a0a;
+    background-color: transparent;
+    font-size: 1vw;
+}
+#gender {
+    background-color: red;
+    color: yellow;
+}
 /* Mengatur warna latar belakang radio button saat terpilih */
 input[type="radio"] {
-    accent-color: var(--color11); /* Warna hijau */
+    accent-color: #222831;
 }
 .contact-button {
     background-color:var(--color11);
@@ -277,6 +286,17 @@ input[type="radio"] {
     background-color:#222831;
 }
 .contact-form {
+    width: 95%;
+    height: 3vw;
+    margin-right: 5%;
+    border: none;
+    border-radius: 0.3vw;
+    font-size: 1vw;
+    background-color: #b5b5b5;
+}
+.contact-form-txt {
+    width: 95%;
+    margin-right: 5%;
     border: none;
     border-radius: 0.3vw;
     font-size: 1vw;
