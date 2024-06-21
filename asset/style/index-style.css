@@ -199,6 +199,22 @@ display: flex;
     border-radius: 0.5vw;
 }
 @media only screen and (max-width: 600px) {
+    .aboutus {
+        color: #a39d9d;
+        font-size: 80%;
+        width: 100%; /* Menggunakan lebar 100% dari container */
+        box-sizing: border-box; /* Menghitung padding dan border dalam width */
+        background-color: transparent;
+        margin-left: 1vw;
+    }
+    .aboutus-text {
+        color: #a39d9d;
+        font-size: 80%;
+        margin-top: 0.1vw;
+        margin-bottom: 0.1vw;
+        background-color: transparent;
+        margin-left: 1vw;
+    }
     .ham-button {
         margin-right: 2vw;
     }
@@ -247,6 +263,22 @@ display: flex;
     /* end of hamburger button */
 }
 @media only screen and (max-width: 500px) {
+    .aboutus {
+        color: #a39d9d;
+        font-size: 60%;
+        width: 100%; /* Menggunakan lebar 100% dari container */
+        box-sizing: border-box; /* Menghitung padding dan border dalam width */
+        background-color: transparent;
+        margin-left: 1vw;
+    }
+    .aboutus-text {
+        color: #a39d9d;
+        font-size: 60%;
+        margin-top: 0.1vw;
+        margin-bottom: 0.1vw;
+        background-color: transparent;
+        margin-left: 1vw;
+    }
     .ham-button {
         margin-right: 2vw;
     }
@@ -295,6 +327,22 @@ display: flex;
     /* end of hamburger button */
 }
 @media only screen and (max-width: 430px) {
+    .aboutus {
+        color: #a39d9d;
+        font-size: 40%;
+        width: 100%; /* Menggunakan lebar 100% dari container */
+        box-sizing: border-box; /* Menghitung padding dan border dalam width */
+        background-color: transparent;
+        margin-left: 1vw;
+    }
+    .aboutus-text {
+        color: #a39d9d;
+        font-size: 40%;
+        margin-top: 0.1vw;
+        margin-bottom: 0.1vw;
+        background-color: transparent;
+        margin-left: 1vw;
+    }
     .ham-button {
         margin-right: 2vw;
     }
