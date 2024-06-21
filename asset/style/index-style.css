@@ -256,10 +256,6 @@ display: flex;
     background-color: transparent;
     font-size: 1vw;
 }
-#gender {
-    background-color: red;
-    color: yellow;
-}
 /* Mengatur warna latar belakang radio button saat terpilih */
 input[type="radio"] {
     accent-color: #222831;
@@ -442,6 +438,99 @@ form>textarea {
         transform: translate(0, -1vw) rotate(45deg);
     }
     /* end of hamburger button */
+    /* popup form contact */
+.popup-form {
+    position:fixed;
+    background-color: rgba(255, 255, 255, 0);
+    justify-content:center;
+    align-items: center;
+    z-index: 5;
+    border-radius: 50px;
+}
+
+.popup-content {
+    background-color: #a39d9d96;
+    padding: 2vw; /* Reduced padding for smaller size */
+    border-radius: 3vw; /* Smaller border radius */
+    width: 70%; /* Reduced width */
+    height: fit-content;
+    position: relative;
+    top: 2vw; /* Adjusted top position for smaller size */
+    justify-content: center;
+    align-items: center;
+}
+.article-content-h2 {
+    color: #cecece;
+    width: 100vw; /* Menggunakan lebar 100% dari container */
+    box-sizing: border-box; /* Menghitung padding dan border dalam width */
+    font-size: 4vw;
+    background-color: transparent;
+}
+.close-button {
+    float: right;
+    font-size: 4vw;
+    cursor:pointer;
+    background-color: transparent;
+}
+.radio-text {
+    color: #0a0a0a;
+    background-color: transparent;
+    font-size: 3vw;
+}
+/* Mengatur warna latar belakang radio button saat terpilih */
+input[type="radio"] {
+    accent-color: #222831;
+}
+.contact-button {
+    background-color:var(--color11);
+    
+}
+.contact-button:hover {
+    background-color:#5151517c;
+    color: var(--color11);
+    
+}
+.search-button {
+    background-color:#e6e6e67c;
+    border: none;
+    border-radius: 0.5vw;
+    cursor: pointer;
+}
+.search-button:hover {
+    background-color: #5151517c
+}
+.background-cover {
+    background-color:#222831;
+}
+.contact-form {
+    width: 95%;
+    height: 3vw;
+    margin-right: 5%;
+    border: none;
+    border-radius: 0.3vw;
+    font-size: 3vw;
+    background-color: #b5b5b5;
+}
+.contact-form-txt {
+    width: 95%;
+    margin-right: 5%;
+    border: none;
+    border-radius: 0.3vw;
+    font-size: 3vw;
+    background-color: #b5b5b5;
+}
+form>label {
+    font-size: 3vw;
+    background-color: transparent;
+}
+form>input {
+    font-size: 1vw;
+    background-color: transparent;
+}
+form>textarea {
+    font-size: 1vw;
+    background-color: white;
+}
 }
 @media only screen and (max-width: 430px) {
     .aboutus {
