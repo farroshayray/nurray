@@ -87,6 +87,14 @@
     font-size: 1.5vw 100%;
     padding: 0.5vw;
     background-color: transparent;
+    animation-name: nav-animation;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+}
+@keyframes nav-animation {
+    0% {color: transparent;}
+    100% {color: #a39d9d ;}
+
 }
 .nav-bar1>a:hover {
     background-color: #222831;
@@ -119,11 +127,11 @@ display: flex;
 
 }
 
-.welcome-text1 {grid-area: wt1; background-color: #B9B4C7; box-sizing: border-box;}
-.welcome-text2 {grid-area: wt2; background-color: #BB8493; box-sizing: border-box;}
-.welcome-text3 {grid-area: wt3; background-color: #57A6A1; box-sizing: border-box;}
-.welcome-text4 {grid-area: wt4; background-color: #7E6363; box-sizing: border-box;}
-.welcome-text5 {grid-area: wt5; background-color: #99B396; box-sizing: border-box;}
+.welcome-text1 {grid-area: wt1; background-color: #B4B4B8; box-sizing: border-box;}
+.welcome-text2 {grid-area: wt2; background-color: #C7C8CC; box-sizing: border-box;}
+.welcome-text3 {grid-area: wt3; background-color: #F7DED0; box-sizing: border-box;}
+.welcome-text4 {grid-area: wt4; background-color: #E3E1D9; box-sizing: border-box;}
+.welcome-text5 {grid-area: wt5; background-color: #F2EFE5; box-sizing: border-box;}
 
 .welcome-text1:hover {background-color: #a3a3a382;}
 .welcome-text2:hover {background-color: #a3a3a382;}
@@ -132,8 +140,9 @@ display: flex;
 .welcome-text5:hover {background-color: #a3a3a382;}
 
 .cover-container {
-    background-color: #344955;
     display: grid;
+    background: rgb(34,40,49);
+    background: linear-gradient(197deg, rgba(34,40,49,1) 0%, rgba(128,139,157,1) 27%, rgba(34,40,49,1) 89%);
     grid-template-areas:
     'wt1 wt1 wt2 wt2 wt5 wt5 wt5'
     'wt1 wt1 wt2 wt2 wt5 wt5 wt5'
@@ -156,6 +165,7 @@ display: flex;
 }
 .cover-container>a {
     display: flex;
+    flex-direction: column;
     padding: 1%;
     border-radius: 3vw;
     font-size: 2vw;
@@ -450,7 +460,7 @@ form>textarea {
 }
 
 .popup-content {
-    background-color: #7d7878;
+    background-color: #7d7878ec;
     padding: 2vw; /* Reduced padding for smaller size */
     border-radius: 3vw; /* Smaller border radius */
     width: 70%; /* Reduced width */
