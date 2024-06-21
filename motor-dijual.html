@@ -3,9 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Motor Dijual</title>
+    <title>Website Jual Beli Mobil-SGSmotor</title>
+    <meta content="Website ini menjual berbagai macam mobil dengan harga yang bersaing dan kualitas yang sangat baik" name="description">
+    <meta content="sgsmotor, jual beli mobil, mobil bekas, mobil baru, dealer mobil, mobil second" name="keywords">
+    <link rel="icon" href="./asset/images/SGSicon32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./asset/style/cover-style.css">
+    <script src="./scripts/script.js"></script>
 </head>
-<body>
-    Motor Dijual
+<body class="fontforbody">
+    <nav style="display: flex; justify-content: space-between; align-items: center; padding: 10px; margin-top: 10px; margin-left: 10px; margin-right: 0px; background-color: #35383e; border-radius: 12px;">
+        <button onclick="window.location.href='index.html';" style="background: none; border: none; padding: 0; cursor: pointer;">
+            <img src="./asset/images/SGSlogowht.png" alt="Logo SGS Motor Group" style="height: auto; max-height: 50px; width: auto; max-width: 100%; min-width: 20px;">
+        </button>
+        <div style="margin-right: 20px; max-width: 100%; min-width: 20px; display: flex; align-items: center;">
+            <span style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
+                <a href="feedback.html" class="nav-link1">Support</a> &nbsp; <!-- calc(8px + 0.5vw) membuat font-size bisa berubah sesuai dengan viewport -->
+                <a href="./page_services/" class="nav-link1">Services</a> &nbsp;
+                <a href="projects.html" class="nav-link1">Projects</a> &nbsp;
+                <a href="Readme.html" class="nav-link1">About</a>
+            </span>
+            <button class="contact-button" onclick="const contactButton = document.getElementById('contactUsButton'); contactButton.scrollIntoView({ behavior: 'smooth', block: 'start' }); setTimeout(() => contactButton.click(), 500);" style="margin-left: 20px; font-size: calc(8px + 0.5vw); font-weight: bold; border: none; border-radius: 12px; cursor: pointer;">Contact</button>
+        </div>
+    </nav>
+    <header>
+        </form>
+            <h1 style="margin-bottom: 1px;">Selamat datang di SGS Motor Group</h1>
+            <p style="margin-top: 1px;">Website jual beli mobil terpercaya di Depok</p>
+        <form action="/search" method="get">
+            <input type="text" name="search" placeholder="Search cars..." required style="border-radius: 8px;">
+            <button class="search-button" type="submit">Search</button>
+        <br>
+    </header>
+    <main>
+        </form>
+        <h2 style="margin-bottom: 1px;margin-left: 10px;">Daftar Motor dijual</h2>
+        <p style="margin-top: 1px; line-height: 1.5;margin-left: 10px;">Kami menjual segala merk dan tipe mobil dengan kualitas yang sangat baik</p>
+        <article class="article-frame">
+            <div class="article-content">
+                <img class="article-content-photo" src="https://apollo.olx.co.id/v1/files/658f8f62ad0-ID/image;s=1080x810" alt="Toyota Agya 2014" class="rounded-image" style="max-width:100px;">
+                <h4>Yamaha Nmax 2019 Y-Connect</h4>
+                    <p>Harga: Rp. 29.000.000</p>
+                    <p style="margin-bottom: 0;">Tipe: Y-Connect</p>
+                <div class="hidden-text" style="margin-left: -10px;">
+                    <p style="margin-top: 0;">Warna: Hitam</p>
+                    <p>Fitur: Smart Key, Anti-Lock Braking System (ABS), Variable Valve Actuation (VVA), Traction Control System (TCS), LED Headlight</p>
+                    <p>Tahun: 2019</p>
+                    <p>Transmisi: Automatic</p>
+                    <p>Km: 15.000</p>
+                </div>
+                <button class="show-more-button" onclick="toggleHiddenText(event)">Show More...</button>
+            </div>
+        </article>
+
+        <article class="article-frame">
+            <div class="article-content">
+                <img src="https://asset-3.tstatic.net/jualbeli/img/2023/9/2728025/6-1550861195-Motor-Honda-Scoopy-Prestige-Keyless-Putih-Bekas-Tahun-2021-Lengkap-Terawat--Tangerang-Selatan.jpg" alt="Wuling Confero S 2018" class="rounded-image" style="max-width:100px;">
+                <h4>Honda Scoopy 2021 Putih Keyless</h4>
+                    <p>Harga: Rp. 20.000.000</p>
+                    <p style="margin-bottom: 0;">Tipe: Keyless</p>
+                <div class="hidden-text" style="margin-left: -10px;">
+                    <p style="margin-top: 0;">Warna: Putih</p>
+                    <p>Fitur: Keyless Start, Keyless Entry</p>
+                    <p>Tahun: 2021</p>
+                    <p>Transmisi: Matic</p>
+                    <p>Km: 30.000</p>
+                </div>
+                <button class="show-more-button" onclick="toggleHiddenText(event)">Show More...</button>
+            </div>
+        </article>
+
+        <article class="article-frame">
+            <div class="article-content">
+                <img src="https://asset-3.tstatic.net/jualbeli/img/2020/11/2360986/1-98191852-Motor-Bekas-Yamaha-Vixion-2017-Pajak-Hidup-Normal-Harga-Nego---Jakarta.jpg" alt="Mitsubishi Expander Sport 2018" class="rounded-image" style="max-width:100px;">
+                <h4>Yamaha V-ixion 2017</h4>
+                    <p>Harga: Rp. 12.000.000</p>
+                    <p style="margin-bottom: 0;">Tipe: Kopling</p>
+                <div class="hidden-text" style="margin-left: -10px;">
+                    <p style="margin-top: 0;">Warna: Merah Putih</p>
+                    <p>Fitur: Kopling Manual, naked bike</p>
+                    <p>Tahun: 2017</p>
+                    <p>Transmisi: Manual</p>
+                    <p>Km: 106.000</p>
+                </div>
+                <button class="show-more-button" onclick="toggleHiddenText(event)">Show More...</button>
+            </div>
+        </article>
+
+        <article class="article-frame">
+            <div class="article-content">
+                <img src="https://imgcdn.oto.com/large/gallery/exterior/72/1951/harley-davidson-cvo-road-glide-right-side-viewfull-image-439072.jpg" alt="Toyota Alphard 2019" class="rounded-image" style="max-width:100px;">
+                <h4>Harley Davidson CVO Road Glide 2022</h4>
+                    <p>Harga: Rp. 1.200.000.000</p>
+                    <p style="margin-bottom: 0;">Tipe: CVO Road Glide</p>
+                <div class="hidden-text" style="margin-left: -10px;">
+                    <p style="margin-top: 0;">Warna: Hitam</p>
+                    <p>Fitur: max speed 200km/h</p>
+                    <p>Tahun: 2022</p>
+                    <p>Transmisi: Manual</p>
+                    <p>Km: 12.000</p>
+                </div>
+                <button class="show-more-button" onclick="toggleHiddenText(event)">Show More...</button>
+            </div>
+        </article>
+
+        <article class="article-frame">
+            <div class="article-content">
+                <img src="https://asset-a.grid.id/crop/0x0:0x0/x/photo/2023/02/03/fgdfggdhdhdjpg-20230203041242.jpg" alt="Daihatsu Xenia 2023" class="rounded-image" style="max-width:100px;">
+                <h4>Vespa Sprint 2022</h4>
+                    <p>Harga: Rp. 35.000.000</p>
+                    <p style="margin-bottom: 0;">Tipe: Sprint</p>
+                <div class="hidden-text" style="margin-left: -10px;">
+                    <p style="margin-top: 0;">Warna: Putih</p>
+                    <p>Fitur: Keyless</p>
+                    <p>Tahun: 2022</p>
+                    <p>Transmisi: Automatic</p>
+                    <p>Km: 27.000</p>
+                </div>
+                <button class="show-more-button" onclick="toggleHiddenText(event)">Show More...</button>
+            </div>
+        </article>
+    </main>
+
+    <section class="thesection">
+    <button id="contactUsButton" onclick="openContactForm()">Contact Us</button>
+
+    <div id="contactFormPopup" class="popup-form" style="display:none;">
+        <div class="popup-content">
+            <span class="close-button" onclick="closeContactForm()">&times;</span>
+            <span class="article-content-h2">Contact Us</span><br><br>
+            <form style="position: relative; z-index: 5;">
+                <label for="name">Name:</label>
+                <input class="contact-form" type="text" id="name" name="name" required placeholder="Enter your name"><br><br>
+                <label for="gender">Gender:</label><br>
+                <input type="radio" id="gender" name="gender" value="Male" style="font-size: 14px;"> Male
+                <input type="radio" id="gender" name="gender" value="Female" style="font-size: 14px;"> Female <br><br>
+                <label for="email">Email:</label>
+                <input class="contact-form" type="email" id="email" name="email" required placeholder="Enter your email"><br><br>
+                <label for="message">Message:</label><br>
+                <textarea class="contact-form" id="message" name="message" rows="4" cols="21" required placeholder="Enter your message"></textarea><br><br>
+                <input class="search-button" type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+        <!-- WhatsApp Contact Button -->
+        <a href="https://wa.me/6285158444204?text=halo%2C%20saya%20ingin%20bertanya%20tentang%20produk-produk%20yang%20dijual%20di%20SGSmotor" target="_blank" style="position: fixed; bottom: 2px; right: 2px; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; z-index: 1000;">
+            <img src="https://img.icons8.com/?size=100&id=BkugfgmBwtEI&format=png&color=000000" style="vertical-align: middle; margin-right: -10px; width: 50px;">
+        </a>
+    </section>
+    <footer>
+        <div class="aboutus">About Us</div>
+        <p style="line-height: 1.5;">Perusahaan kami bergerak di bidang jual beli mobil dengan kualitas terbaik di kelasnya dan harga yang bersaing sejak tahun 2002.</p>
+        <p>&copy; 2002 SGS Motor Group</p>
+    </footer>
+    <script>
+    </script>
 </body>
 </html>
+
+
