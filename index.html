@@ -37,10 +37,29 @@
             <a href="daftar-kontak.html" class="welcome-text5">Daftar Kontak</a>
         </div>
     </section>
+    <div id="contactFormPopup" class="popup-form" style="display:none;">
+        <div class="popup-content">
+            <span class="close-button" onclick="closeContactForm()">&times;</span>
+            <span class="article-content-h2">Contact Us</span><br><br>
+            <form style="position: relative; background-color: transparent; z-index: 5;">
+                <label for="name">Name:</label>
+                <input class="contact-form" type="text" id="name" name="name" required placeholder="Enter your name"><br><br>
+                <label for="gender">Gender:</label><br>
+                <input type="radio" id="gender" name="gender" value="Male" style="font-size: 14px;"> Male
+                <input type="radio" id="gender" name="gender" value="Female" style="font-size: 14px;"> Female <br><br>
+                <label for="email">Email:</label>
+                <input class="contact-form" type="email" id="email" name="email" required placeholder="Enter your email"><br><br>
+                <label for="message">Message:</label><br>
+                <textarea class="contact-form" id="message" name="message" rows="4" cols="21" required placeholder="Enter your message"></textarea><br><br>
+                <input class="search-button" type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
     <footer class="end-section">
         <div class="aboutus">About Us</div>
         <p class="aboutus-text" style="line-height: 1.5;">Perusahaan kami bergerak di bidang jual beli mobil dengan kualitas terbaik di kelasnya dan harga yang bersaing sejak tahun 2002.</p>
         <p class="aboutus-text">&copy; 2002 SGS Motor Group</p>
     </footer>
+
 </body>
 </html>

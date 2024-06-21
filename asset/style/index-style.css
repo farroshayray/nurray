@@ -202,6 +202,7 @@ display: flex;
 .ham-button-div {
     background-color: transparent;
     margin-right: 2vw;
+    cursor: pointer;
 }
 .ham-button-div>a {
     background-color: #222831;
@@ -212,6 +213,88 @@ display: flex;
     background-color: #222831;
     border-radius: 0.5vw;
 }
+/* popup form contact */
+.popup-form {
+    position:fixed;
+    top: -10%;
+    left: 10%;
+    width: 90%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    z-index: 5;
+    border-radius: 50px;
+}
+
+.popup-content {
+    background-color: #a39d9d96;
+    padding: 2vw; /* Reduced padding for smaller size */
+    border-radius: 25px; /* Smaller border radius */
+    width: max-content; /* Reduced width */
+    position: relative;
+    top: 25px; /* Adjusted top position for smaller size */
+    justify-content: center;
+    align-items: center;
+}
+.article-content-h2 {
+    color: #cecece;
+    width: 100vw; /* Menggunakan lebar 100% dari container */
+    box-sizing: border-box; /* Menghitung padding dan border dalam width */
+    font-size: 2vw;
+    background-color: transparent;
+}
+.close-button {
+    float: right;
+    font-size: 2vw;
+    cursor:pointer;
+    background-color: transparent;
+}
+/* Mengatur warna latar belakang radio button saat terpilih */
+input[type="radio"] {
+    accent-color: var(--color11); /* Warna hijau */
+}
+.contact-button {
+    background-color:var(--color11);
+    
+}
+.contact-button:hover {
+    background-color:#5151517c;
+    color: var(--color11);
+    
+}
+.search-button {
+    background-color:#e6e6e67c;
+    border: none;
+    border-radius: 0.5vw;
+    cursor: pointer;
+}
+.search-button:hover {
+    background-color: #5151517c
+}
+.background-cover {
+    background-color:#222831;
+}
+.contact-form {
+    border: none;
+    border-radius: 0.3vw;
+    font-size: 1vw;
+    background-color: #b5b5b5;
+}
+form>label {
+    font-size: 1vw;
+    background-color: transparent;
+}
+form>input {
+    font-size: 1vw;
+    background-color: transparent;
+}
+form>textarea {
+    font-size: 1vw;
+    background-color: white;
+}
+/* end of popup form */
 @media only screen and (max-width: 600px) {
     .aboutus {
         color: #a39d9d;
