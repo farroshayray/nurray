@@ -449,7 +449,7 @@ form>textarea {
 }
 
 .popup-content {
-    background-color: #a39d9d96;
+    background-color: #7d7878;
     padding: 2vw; /* Reduced padding for smaller size */
     border-radius: 3vw; /* Smaller border radius */
     width: 70%; /* Reduced width */
@@ -495,6 +495,8 @@ input[type="radio"] {
     border: none;
     border-radius: 0.5vw;
     cursor: pointer;
+    text-align: center;
+    font-size: 2.5vw;
 }
 .search-button:hover {
     background-color: #5151517c
