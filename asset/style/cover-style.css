@@ -1,3 +1,7 @@
+@font-face {
+    font-family: gotham;
+    src: url(./font/PinkChicken-Regular.ttf);
+}
 /*color pallate*/
 :root {
     --color-dark: #222831;
@@ -13,15 +17,16 @@
     --color10: #FFFFFF;
     --color11: #a39d9d;
 }
+* {
+    font-family: 'gotham';
+}
 
 article-framebody {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 .fontforbody {
-    font-family: 'roboto', sans-serif;
 }
 h1 {
     color: var(--color11); /* Warna teks #F6DCAC*/
