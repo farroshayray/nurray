@@ -71,9 +71,7 @@ div.contact-button {
     flex-direction: column;
     background-color: var(--color-frame);
     border-radius: 1vw;
-    min-height: max-content;
     width: 100%;
-    height: 35vw;
 }
 .contact-button>button {
     margin: 1vw 2vw 0vw 2vw;
@@ -82,6 +80,9 @@ div.contact-button {
     border: none;
     color: var(--color-dark);
     background-color: var(--color-text);
+}
+.contact-button>.botom-button{
+    margin-bottom: 5vw;
 }
 div.contact-button>h2 {
     color: var(--color-text);
@@ -98,15 +99,14 @@ div.contact-button>h2 {
     .article1 {
         background-color: var(--color-frame);
         border-radius: 1vw;
-        padding: 1vw 1vw 1vw 0vw;
-        margin: 1vw 1vw 1vw 1vw;
         width: 100%;
+        margin: 0vw 0vw 0vw 0vw;
     }
     .article2 {
         background-color: var(--color-frame);
         border-radius: 1vw;
-        padding: 1vw 1vw 1vw 0vw;
-        margin: 1vw 1vw 1vw 1vw;
         width: 100%;
+        margin: 1vw 0vw 0vw 0vw;
     }
+    
 }
