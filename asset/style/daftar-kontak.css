@@ -23,6 +23,9 @@
     box-sizing: border-box;
     font-family: 'gotham';
 }
+body {
+    background-color: var(--color-dark);
+}
 header {
     display: flex;
     border-radius: 1vw;
@@ -92,6 +95,13 @@ div.contact-button {
 div.contact-button>h2 {
     color: var(--color-text);
     margin-left: 2vw;
+}
+.end-section {
+    margin-top: 2vw;
+    color: var(--color-text);
+}
+.aboutus {
+    margin-left: 1vw;
 }
 @media only screen and (max-width: 600px) {
     header {
