@@ -108,5 +108,13 @@ div.contact-button>h2 {
         width: 100%;
         margin: 1vw 0vw 0vw 0vw;
     }
+    .contact-button>button {
+        margin: 1vw 2vw 0vw 2vw;
+        border-radius: 0.8vw;
+        height: 13vw;
+        border: none;
+        color: var(--color-dark);
+        background-color: var(--color-text);
+    }
     
 }
