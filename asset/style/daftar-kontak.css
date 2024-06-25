@@ -70,6 +70,10 @@ article>h2,p {
     margin: 0vw 0vw 0vw 0.5vw;
     width: 50%;
 }
+.article2>ul>li {
+    color: var(--color-text);
+    font-weight: bold;
+}
 div.contact-button {
     margin: 0vw;
     display: flex;
