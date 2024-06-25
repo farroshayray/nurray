@@ -115,12 +115,13 @@ div.contact-button>h2 {
         border-radius: 2vw;
     }
     header>h1 {
-        margin: 0 0 0 2vw;
+        margin: 0 0 2vw 2vw;
     }
     header>nav {
         margin: 0 0 1vw 2vw;
     }
     nav>a {
+        font-size: 5vw;
         padding: 0 0.5vw 0 0.5vw;
     }
     .div-article {
@@ -137,6 +138,12 @@ div.contact-button>h2 {
         width: 100%;
         margin: 0vw 0vw 0vw 0vw;
         border-radius: 2vw;
+    }
+    .article1>h2 {
+        margin-bottom: 3vw;
+    }
+    .article2>h2 {
+        margin-bottom: 3vw;
     }
     div.contact-button {
         border-radius: 2vw;
