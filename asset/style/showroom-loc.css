@@ -1,6 +1,11 @@
+@font-face {
+    font-family: gotham;
+    src: url(./font/PinkChicken-Regular.ttf);
+}
 * {
     box-sizing: border-box;
     background-color: #222831;
+    font-family: 'gotham';
 }
 .logo-sgs {
     max-width: 15%;
@@ -25,7 +30,6 @@
     color: #a39d9d;
     text-decoration: none;
     background-color: transparent;
-    font-family: 'Roboto', sans-serif;
     font-size: 1.5vw;
     padding: 0.5vw;
 }
@@ -33,7 +37,6 @@
     color: #a39d9d;
     text-decoration: none;
     background-color: #222831;
-    font-family: 'Roboto', sans-serif;
     font-size: 1.5vw;
     border-radius: 1vw;
     padding: 0.5vw;
@@ -54,7 +57,6 @@
 }
 .article-text {
     background-color: transparent;
-    font-family: 'Roboto', sans-serif;
     font-size: 1.1vw;
 }
 .article-header {
@@ -62,7 +64,6 @@
     margin-bottom: 5%;
     background-color: transparent;
     color: #a39d9d;
-    font-family:'Roboto', sans-serif;
 }
 .article-text {
 text-align: justify;
@@ -97,7 +98,6 @@ color: #a39d9d;
         color: #a39d9d;
         text-decoration: none;
         background-color: transparent;
-        font-family: 'Roboto', sans-serif;
         font-size: 4vw;
         padding: 1vw;
     }
@@ -105,14 +105,12 @@ color: #a39d9d;
         color: #a39d9d;
         text-decoration: none;
         background-color: #222831;
-        font-family: 'Roboto', sans-serif;
         font-size: 4vw;
         border-radius: 1vw;
         padding: 1vw;
     }
     .article-text {
         background-color: transparent;
-        font-family: 'Roboto', sans-serif;
         font-size: 3vw;
     }
 }
