@@ -113,6 +113,7 @@ div.contact-button>h2 {
         display: flex;
         flex-direction: column;
         border-radius: 2vw;
+        margin-bottom: 2vw;
     }
     header>h1 {
         margin: 0 0 2vw 2vw;
@@ -132,12 +133,12 @@ div.contact-button>h2 {
     }
     .article1 {
         width: 100%;
-        margin: 0vw 0vw 1vw 0vw;
+        margin: 0vw 0vw 3vw 0vw;
         border-radius: 2vw;
     }
     .article2 {
         width: 100%;
-        margin: 0vw 0vw 0vw 0vw;
+        margin: 0vw 0vw 2vw 0vw;
         border-radius: 2vw;
     }
     .article1>h2 {
@@ -148,6 +149,7 @@ div.contact-button>h2 {
     }
     div.contact-button {
         border-radius: 2vw;
+        margin-bottom: 4vw;
     }
     .contact-button>button {
         margin: 1vw 2vw 0vw 2vw;
