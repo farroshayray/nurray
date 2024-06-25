@@ -114,6 +114,7 @@ header>.logo-sgs {
 }
 #header-container1 {
     overflow: hidden;
+    border-radius: 3vw;
 }
 
 .section-welcome {
@@ -200,7 +201,7 @@ display: flex;
 }
 .end-section {
     background-color: #ffffff18;
-    border-radius: 1vw;
+    border-radius: 2vw;
     width: 100%;
     justify-content: left;
     align-items: left;
