@@ -323,6 +323,36 @@ form>textarea {
 }
 /* end of popup form */
 @media only screen and (max-width: 600px) {
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        position: relative;
+    }
+    .header-logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+    }
+    img.logo-sgs {
+        width: 80%;
+        margin-top: 3vw;
+    }
+    h1.header-side {
+        width: 100%;
+        font-size: large;
+    }
+    div.ham-button-div>a {
+        font-size: 5vw;
+    }
+    .cover-container {
+        aspect-ratio: 1/1;
+    }
+    section>.cover-container {
+        width: 100%;
+        height: 100%;
+    }
     .aboutus {
         color: #a39d9d;
         font-size: 80%;
