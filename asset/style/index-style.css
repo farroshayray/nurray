@@ -28,6 +28,13 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size:cover;
+    animation-name: bg1-animation;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+}
+@keyframes bg1-animation {
+    0% {background-image: url("./rawbackgroundmobile.png");}
+    100% {background-image: url("./rawbackground.png");}
 }
 .header-logo {
     background-color: transparent;
@@ -360,6 +367,13 @@ a.href-bottom {
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size:cover;
+        animation-name: bg2-animation;
+        animation-duration: 4s;
+        animation-iteration-count: 1;
+    }
+    @keyframes bg2-animation {
+        0% {background-image: url("./rawbackground.png");}
+        100% {background-image: url("./rawbackgroundmobile.png");}
     }
     .header-container {
         display: flex;
