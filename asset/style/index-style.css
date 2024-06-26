@@ -27,13 +27,15 @@ body {
     background-image: url("./rawbackground.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size:110%;
+    background-position: center;
     animation-name: bg1-animation;
     animation-duration: 4s;
     animation-iteration-count: 1;
 }
 @keyframes bg1-animation {
     0% {background-image: url("./rawbackgroundmobile.png");}
+    30% {background-image: url("./rawbackgroundmobile.png");}
     100% {background-image: url("./rawbackground.png");}
 }
 .header-logo {
@@ -367,12 +369,15 @@ a.href-bottom {
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size:cover;
+        background-size:110%;
+        background-position: center;
         animation-name: bg2-animation;
         animation-duration: 4s;
         animation-iteration-count: 1;
     }
     @keyframes bg2-animation {
         0% {background-image: url("./rawbackground.png");}
+        30% {background-image: url("./rawbackground.png");}
         100% {background-image: url("./rawbackgroundmobile.png");}
     }
     .header-container {
