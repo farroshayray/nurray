@@ -345,7 +345,7 @@ form>textarea {
     display: flex;
 }
 .def-section>div>img {
-    width: 7%;
+    width: 4%;
     height: auto;
 }
 .div-content>h3 {
@@ -410,6 +410,10 @@ a.href-bottom {
         width: 100%;
         height: 100%;
         margin: 0 0 0 0 ;
+    }
+    .def-section>div>img {
+        width: 7%;
+        height: auto;
     }
     div.bar1, div.bar2, div.bar3 {
         width: 5vw;
