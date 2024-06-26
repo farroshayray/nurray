@@ -322,6 +322,32 @@ form>textarea {
     font-size: 1vw;
     background-color: white;
 }
+.def-section {
+    margin-top: 2vw;
+    margin-bottom: 5vw;
+    color: #a39d9d;
+}
+.def-section>div {
+    align-items: center;
+    display: flex;
+}
+.def-section>div>img {
+    width: 7%;
+    height: auto;
+}
+.div-content>h3 {
+    margin: 1.5vw 0 0 0;
+}
+.div-content>p {
+    margin: 0 0 1.5vw 0;
+}
+.div-content {
+    margin: 0 0 0 2vw;
+}
+a.href-bottom {
+    color: #a39d9d;
+    cursor: pointer;
+}
 /* end of popup form */
 @media only screen and (max-width: 600px) {
     .header-container {
@@ -353,6 +379,7 @@ form>textarea {
     section>.cover-container {
         width: 100%;
         height: 100%;
+        margin: 0 0 0 0 ;
     }
     div.bar1, div.bar2, div.bar3 {
         width: 5vw;
