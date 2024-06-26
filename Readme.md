@@ -1,8 +1,8 @@
-# SGSmotor
+# NurrayMotor
 Car buying and selling website that can serve all Indonesian people
 
 # Description
-SGSmotor is a car buying and selling website designed to simplify the process of finding your dream car. We aim to provide a seamless experience for customers in their quest for the perfect vehicle.- **Visit our website** [nurray.my.id](https://nurray.my.id)
+NurrayMotor is a car buying and selling website designed to simplify the process of finding your dream car. We aim to provide a seamless experience for customers in their quest for the perfect vehicle.- **Visit our website** [nurray.my.id](https://nurray.my.id)
 
 ![nurray web](./asset/images/sgs_ss12.png)
 
@@ -59,7 +59,7 @@ Welcome to my GitHub profile! I'm Farros, a passionate software engineer. This R
 - **Description:** A full-stack web application developed using `React`.
 - **Features:** product listing, shopping cart, order processing, direct whatsapp chat.
 - **Technologies:** `React`, `HTML/CSS`.
-- **Repository:** [SGSmotor](https://github.com/farroshayray/SGSmotor)
+- **Repository:** [NurrayMotor](https://github.com/farroshayray/SGSmotor)
 
 ## Projects
 ### Project 2: Surveilance detection system
