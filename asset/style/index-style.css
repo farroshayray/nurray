@@ -361,6 +361,9 @@ a.href-bottom {
     color: #a39d9d;
     cursor: pointer;
 }
+.ads1 {
+    width: 100%;
+}
 /* end of popup form */
 @media only screen and (max-width: 600px) {
     body {
