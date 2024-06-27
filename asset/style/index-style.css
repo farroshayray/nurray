@@ -367,7 +367,7 @@ a.href-bottom {
 /* end of popup form */
 @media only screen and (max-width: 600px) {
     body {
-        background-image: url("./rawbackgroundmobile.png");
+        background-image: url("./rawbackgroundmobile.webp");
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size:cover;
@@ -378,9 +378,9 @@ a.href-bottom {
         animation-iteration-count: 1;
     }
     @keyframes bg2-animation {
-        0% {background-image: url("./rawbackground.png");}
-        30% {background-image: url("./rawbackground.png");}
-        100% {background-image: url("./rawbackgroundmobile.png");}
+        0% {background-image: url("./rawbackground.webp");}
+        30% {background-image: url("./rawbackground.webp");}
+        100% {background-image: url("./rawbackgroundmobile.webp");}
     }
     .header-container {
         display: flex;
