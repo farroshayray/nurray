@@ -24,7 +24,7 @@
     font-family:'gotham';
 }
 body {
-    background-image: url("./rawbackground.png");
+    background-image: url("./rawbackground.webp");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size:110%;
@@ -34,9 +34,9 @@ body {
     animation-iteration-count: 1;
 }
 @keyframes bg1-animation {
-    0% {background-image: url("./rawbackgroundmobile.png");}
-    30% {background-image: url("./rawbackgroundmobile.png");}
-    100% {background-image: url("./rawbackground.png");}
+    0% {background-image: url("./rawbackgroundmobile.webp");}
+    30% {background-image: url("./rawbackgroundmobile.webp");}
+    100% {background-image: url("./rawbackground.webp");}
 }
 .header-logo {
     background-color: transparent;
