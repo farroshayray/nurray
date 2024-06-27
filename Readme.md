@@ -1,3 +1,6 @@
+# Documentation
+
+
 # NurrayMotor
 Car buying and selling website that can serve all Indonesian people
 
@@ -29,6 +32,8 @@ _____
 **For more details and updates, follow us on our social media platforms!**
 
 <br><br><br><br><br><br><br><br>
+_____
+_____
 
 
 # Farros - Software Engineer
@@ -60,6 +65,7 @@ Welcome to my GitHub profile! I'm Farros, a passionate software engineer. This R
 - **Features:** product listing, shopping cart, order processing, direct whatsapp chat.
 - **Technologies:** `React`, `HTML/CSS`.
 - **Repository:** [NurrayMotor](https://github.com/farroshayray/SGSmotor)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a7eb14a8-dd3f-4aaf-a38a-842c1efbe16e/deploy-status)](https://app.netlify.com/sites/nurray/deploys)
 
 ## Projects
 ### Project 2: Surveilance detection system
