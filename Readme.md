@@ -18,7 +18,7 @@ Feel the responsive web design, it is easy to use
 # Usage
 The use of this website is for car seekers to find their dream car to buy. Apart from that, car seekers can also create special posts to search for cars
 
-# Deploying Process
+# Deployment Process
 
 1. Push the project to GitHub
 ![Push the project to GitHub](./asset/images/1.%20push%20to%20github.png)
