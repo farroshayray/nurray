@@ -18,13 +18,40 @@ Feel the responsive web design, it is easy to use
 # Usage
 The use of this website is for car seekers to find their dream car to buy. Apart from that, car seekers can also create special posts to search for cars
 
+# Deploying Process
+
+1. Push the project to GitHub
+![Push the project to GitHub](./asset/images/1.%20push%20to%20github.png)
+push the project using gitbash commands, first `git status` for checking the status for each file. secondly add files to be commited with `git add <file directory>`, then commit the change using `git commit -m '<the commit note>'`. finally the project can be pushed to [GitHub](https://github.com) using `git push` command.
+<br><br><br>
+2. Checking the [GitHub](https://github.com) repository
+![Checking the GitHub repository](./asset/images/2.%20check%20github%20repo.png)
+After `git push` it can be checked in the [GitHub](https://github.com) repository.
+<br><br><br>
+3. Looking for new domain to be paid
+![Looking for new domain](./asset/images/3.%20cari%20nama%20domain.png)
+Make sure your request domain is eligible to be bought, in this case I choose niagahoster as a domain provider.
+<br><br><br>
+4. Copy DNS Nameserver
+![Copy DNS Nameserver](./asset/images/4.%20copy%20DNS%20Nameserver.png)
+Copy DNS/Nameserver from your domain provider.
+<br><br><br>
+5. Paste DNS Nameserver
+![Paste DNS Nameserver](./asset/images/5.%20paste%20DNS%20Nameserver%20on%20Netlify.png)
+Paste it on build tools and continous deployment webpage. In this case I used [Netlify](https://netlify.app)
+<br><br><br>
+6. Check your new domain
+![checking the domain](./asset/images/6.%20domain%20can%20load%20the%20webpage.png)
+Load your new webpage to the browser, check if your new domain can load your project. Then your project completely deployed.
+<br><br><br>
+
 # Support
 
 - **Email:** [farros.hr@gmail.com](mailto:farros.hr@gmail.com)
 
 # Roadmap
-- [ ] Create a more user-friendly interface
-- [ ] Implement a more efficient search algorithm
+- [x] Create a more user-friendly interface
+- [x] Implement a more efficient search algorithm
 - [ ] Develop a chatbot to help users with their queries
 
 _____
