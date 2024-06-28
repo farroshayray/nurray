@@ -92,9 +92,10 @@ Welcome to my GitHub profile! I'm Farros, a passionate software engineer. This R
 - **Features:** product listing, shopping cart, order processing, direct whatsapp chat.
 - **Technologies:** `React`, `HTML/CSS`.
 - **Repository:** [NurrayMotor](https://github.com/farroshayray/SGSmotor)
+<br>
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a7eb14a8-dd3f-4aaf-a38a-842c1efbe16e/deploy-status)](https://app.netlify.com/sites/nurray/deploys)
+<br><br><br>
 
-## Projects
 ### Project 2: Surveilance detection system
 - **Description:** A full-stack web application developed using `React`, `IoT`, and `Python`.
 - **Features:** direct chat telegram, email, and whatsapp. Camera an infrared detection system
