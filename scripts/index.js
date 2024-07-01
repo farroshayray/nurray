@@ -23,9 +23,9 @@ function closeContactForm() {
 document.addEventListener('DOMContentLoaded', function() {
     // Deteksi klik tombol dan toggle class untuk mode malam
     document.getElementById('mode-toggle').addEventListener('click', function() {
-        document.body.classList.toggle('dark-mode');
+        document.body.classList.toggle('night-mode');
         var modeText = document.getElementById('mode-text');
-        if (document.body.classList.contains('dark-mode')) {
+        if (document.body.classList.contains('night-mode')) {
             modeText.textContent = 'Night Mode';
         } else {
             modeText.textContent = 'Day Mode';
@@ -34,22 +34,22 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // saving last setting for day/night mode
-// Simpan status mode (day/night) di local storage
-var modeToggle = document.getElementById('mode-toggle');
-modeToggle.addEventListener('change', function() {
-    if (modeToggle.checked) {
-        localStorage.setItem('mode', 'night');
-    } else {
-        localStorage.setItem('mode', 'day');
-    }
-});
+    // Simpan status mode (day/night) di local storage
+    var modeToggle = document.getElementById('mode-toggle');
+    modeToggle.addEventListener('change', function() {
+        if (modeToggle.checked) {
+            localStorage.setItem('mode', 'night');
+        } else {
+            localStorage.setItem('mode', 'day');
+        }
+    });
 
-// Cek status mode terakhir saat halaman dimuat
-document.addEventListener('DOMContentLoaded', function() {
-    var lastMode = localStorage.getItem('mode');
-    if (lastMode === 'night') {
-        document.body.classList.add('dark-mode');
-        document.getElementById('mode-text').textContent = 'Night Mode';
-        modeToggle.checked = true;
-    }
-});
+    // Cek status mode terakhir saat halaman dimuat
+    document.addEventListener('DOMContentLoaded', function() {
+        var lastMode = localStorage.getItem('mode');
+        if (lastMode === 'night') {
+            document.body.classList.add('night-mode');
+            document.getElementById('mode-text').textContent = 'Night Mode';
+            modeToggle.checked = true;
+        }
+    });

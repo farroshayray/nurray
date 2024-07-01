@@ -34,7 +34,7 @@ body {
     animation-duration: 4s;
     animation-iteration-count: 1;
 }
-.dark-mode {
+.night-mode {
     background-image: url("./rawbackground.webp");
 }
 /* slider start */
