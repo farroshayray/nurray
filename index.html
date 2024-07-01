@@ -13,14 +13,6 @@
     <!-- <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="./asset/style/index-style.css">
     <script src="./scripts/index.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Deteksi klik tombol dan toggle class untuk mode malam
-            document.getElementById('mode-toggle').addEventListener('click', function() {
-                document.body.classList.toggle('dark-mode');
-            });
-        });
-    </script>
 </head>
 <body>
     <div class="header-container" id="header-container1">
@@ -36,11 +28,15 @@
             </div>
         </nav>
     </div>
-        <!-- Ubah tombol untuk mengganti mode menjadi toggle switch -->
-    <label class="switch">
-        <input type="checkbox" id="mode-toggle">
-        <span class="slider round"></span>
-    </label>
+    <div class="switch-mode">
+        <label class="switch">
+            <input type="checkbox" id="mode-toggle">
+            <span class="slider round"></span>
+        </label>
+        <div class="side-text-slider">
+            <span class="slider-text" id="mode-text">Day Mode</span>
+        </div>
+    </div> 
     <section class="section-welcome">
         <div class="cover-container">
             <a href="mobil-dijual.html" title="mobil dijual page" class="welcome-text1"><img src="./asset/images/icons8-car-90.png" alt="logo" title="logo" style="width: 5vw; background-color: transparent;">Mobil dijual</a>

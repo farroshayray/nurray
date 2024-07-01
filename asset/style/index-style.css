@@ -38,6 +38,9 @@ body {
     background-image: url("./rawbackground.webp");
 }
 /* slider start */
+div.switch-mode {
+    display: flex;
+}
 .switch {
     position: relative;
     display: inline-block;
@@ -61,6 +64,7 @@ body {
     background-color: #ccc;
     -webkit-transition: .4s;
     transition: .4s;
+    z-index: -1;
   }
   
   .slider:before {
@@ -75,7 +79,7 @@ body {
     transition: .4s;
   }
   input:checked + .slider {
-    background-color: var(--color-frame);
+    background-color: var(--color2);
   }
 
   
@@ -93,6 +97,14 @@ body {
   .slider.round:before {
     border-radius: 50%;
   }
+  span.slider-text {
+    color: #a39d9d;
+  }
+  .side-text-slider {
+    align-content: center;
+    margin-left: 1vw;
+  }
+
   /* slider end */
 @keyframes bg1-animation {
     0% {background-image: url("./rawbackgroundmobile.webp");}
