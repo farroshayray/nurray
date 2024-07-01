@@ -85,7 +85,7 @@ div.switch-mode {
     transition: .4s;
   }
   input:checked + .slider {
-    background-color: var(--color4);
+    background-color: #0c1829;
   }
 
   
