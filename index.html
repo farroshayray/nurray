@@ -13,26 +13,6 @@
     <!-- <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="./asset/style/index-style.css">
     <script src="./scripts/index.js"></script>
-    <script>
-        // Check if mode preference is stored in localStorage
-        const modePreference = localStorage.getItem('modePreference');
-
-        // Set the theme based on the stored preference or default to 'day-mode'
-        document.body.classList.toggle('night-mode', modePreference === 'night-mode');
-
-        // Function to toggle between day and night mode
-        function toggleMode() {
-            document.body.classList.toggle('night-mode');
-            const currentMode = document.body.classList.contains('night-mode') ? 'night-mode' : 'day-mode';
-            localStorage.setItem('modePreference', currentMode);
-        }
-
-        // Add event listener to the mode toggle checkbox
-        document.getElementById('mode-toggle').addEventListener('change', toggleMode);
-
-        // Set the initial text of the mode toggle based on the stored preference
-        document.getElementById('mode-text').textContent = modePreference === 'night-mode' ? 'Night Mode' : 'Day Mode';
-    </script>
 </head>
 <body>
     <div class="header-container" id="header-container1">
@@ -127,6 +107,5 @@
         <p class="aboutus-text">Perusahaan kami bergerak di bidang jual beli mobil dengan kualitas terbaik di kelasnya dan harga yang bersaing sejak tahun 2002.</p>
         <p class="aboutus-text">&copy; 2002 SGS Motor Group</p>
     </footer>
-
 </body>
 </html>

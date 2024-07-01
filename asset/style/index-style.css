@@ -25,17 +25,23 @@
 }
 body {
     background-image: url("./rawbackgroundlight.webp");
-    /* background-color: var(--color-dark); */
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size:110%;
     background-position: center;
     animation-name: bg1-animation;
-    animation-duration: 4s;
+    animation-duration: 3s;
     animation-iteration-count: 1;
 }
 .night-mode {
     background-image: url("./rawbackground.webp");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:110%;
+    background-position: center;
+    animation-name: bg3-animation;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
 }
 /* slider start */
 div.switch-mode {
@@ -61,7 +67,7 @@ div.switch-mode {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: var(--color8);
     -webkit-transition: .4s;
     transition: .4s;
     z-index: -1;
@@ -74,12 +80,12 @@ div.switch-mode {
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: white;
+    background-color: var(--color-frame);
     -webkit-transition: .4s;
     transition: .4s;
   }
   input:checked + .slider {
-    background-color: var(--color2);
+    background-color: var(--color4);
   }
 
   
@@ -107,8 +113,11 @@ div.switch-mode {
 
   /* slider end */
 @keyframes bg1-animation {
-    0% {background-image: url("./rawbackgroundmobile.webp");}
-    30% {background-image: url("./rawbackgroundmobile.webp");}
+    0% {background-image: url("./rawbackground.webp");}
+    100% {background-image: url("./rawbackgroundlight.webp");}
+}
+@keyframes bg3-animation {
+    0% {background-image: url("./rawbackgroundlight.webp");}
     100% {background-image: url("./rawbackground.webp");}
 }
 .header-logo {
@@ -440,19 +449,32 @@ a.href-bottom {
 /* end of popup form */
 @media only screen and (max-width: 600px) {
     body {
-        background-image: url("./rawbackgroundmobile.webp");
+        background-image: url("./rawbackgroundlight.webp");
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size:cover;
         background-size:110%;
         background-position: center;
         animation-name: bg2-animation;
-        animation-duration: 4s;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+    }
+    .night-mode {
+        background-image: url("./rawbackgroundmobile.webp");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size:110%;
+        background-position: center;
+        animation-name: bg4-animation;
+        animation-duration: 2s;
         animation-iteration-count: 1;
     }
     @keyframes bg2-animation {
-        0% {background-image: url("./rawbackground.webp");}
-        30% {background-image: url("./rawbackground.webp");}
+        0% {background-image: url("./rawbackgroundmobile.webp");}
+        100% {background-image: url("./rawbackgroundlight.webp");}
+    }
+    @keyframes bg4-animation {
+        0% {background-image: url("./rawbackgroundlight.webp");}
         100% {background-image: url("./rawbackgroundmobile.webp");}
     }
     .header-container {
@@ -525,5 +547,3 @@ a.href-bottom {
         font-size: 0.7em;
     }
 }
-
-
