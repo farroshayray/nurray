@@ -440,9 +440,14 @@ form>textarea {
 .div-content {
     margin: 0 0 0 2vw;
 }
+.mail-href {
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
 a.href-bottom {
     color: #a39d9d;
     cursor: pointer;
+    margin: 1vw 0 1vw 0;
 }
 .ads1 {
     width: 100%;
