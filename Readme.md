@@ -49,10 +49,6 @@ Load your new webpage to the browser, check if your new domain can load your pro
 When you add a custom domain on Netlify, it will be automatically secured by [LetsEncrypt](https://letsencrypt.org/). you can check it in Domain Management on Netlify.
 <br><br><br>
 
-```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
 # Support
 
 - **Email:** [farros.hr@gmail.com](mailto:farros.hr@gmail.com)
