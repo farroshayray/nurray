@@ -7,7 +7,7 @@ Car buying and selling website that can serve all Indonesian people
 # Description
 NurrayMotor is a car buying and selling website designed to simplify the process of finding your dream car. We aim to provide a seamless experience for customers in their quest for the perfect vehicle.- **Visit our website** [nurray.my.id](https://nurray.my.id)
 
-![nurray web](./asset/images/sgs_ss12.png)
+![nurray web](./asset/images/sgs_ss122.png)
 
 You can now contact us by whatsapp!
 ![nurray web](./asset/images/sgs_ss22.png)
@@ -30,7 +30,7 @@ After `git push` it can be checked in the [GitHub](https://github.com) repositor
 <br><br><br>
 3. Looking for new domain to be paid
 ![Looking for new domain](./asset/images/3.%20cari%20nama%20domain.png)
-Make sure your request domain is eligible to be bought, in this case I choose niagahoster as a domain provider.
+Make sure your request domain is eligible to be bought, in this case I choose [Niagahoster](https://www.niagahoster.co.id/) as a domain provider.
 <br><br><br>
 4. Copy DNS Nameserver
 ![Copy DNS Nameserver](./asset/images/4.%20copy%20DNS%20Nameserver.png)
@@ -41,10 +41,18 @@ Copy DNS/Nameserver from your domain provider.
 Paste it on build tools and continous deployment webpage. In this case I used [Netlify](https://netlify.app)
 <br><br><br>
 6. Check your new domain
-![checking the domain](./asset/images/6.%20domain%20can%20load%20the%20webpage.png)
+![checking the domain](./asset/images/6.%20domain%20can%20load%20the%20whole%20webpage.png)
 Load your new webpage to the browser, check if your new domain can load your project. Then your project completely deployed.
 <br><br><br>
+7. Make sure your domain is secured
+![make sure SSL certified](./asset/images/7.%20make%20sure%20SSL%20certified.png)
+When you add a custom domain on Netlify, it will be automatically secured by [LetsEncrypt](https://letsencrypt.org/). you can check it in Domain Management on Netlify.
+<br><br><br>
 
+```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
 # Support
 
 - **Email:** [farros.hr@gmail.com](mailto:farros.hr@gmail.com)
